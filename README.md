@@ -1,3 +1,1 @@
-# cheapHousesMVP
-# cheaphouses
 # cheaphouses
