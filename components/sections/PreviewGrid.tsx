@@ -1,23 +1,22 @@
 'use client'
 
 import { useState, useMemo, useEffect } from 'react'
-import { LISTINGS, FILTER_DEFS, FILTER_DEFAULTS, PILL_LABELS } from '@/lib/data'
-import { augmentListings, filterListings } from '@/lib/utils'
+import { FILTER_DEFS, FILTER_DEFAULTS, PILL_LABELS } from '@/lib/data'
+import { filterListings } from '@/lib/utils'
 import { SlidersIcon, XIcon } from '@/components/ui/icons'
 import ListingCard from './ListingCard'
-import type { FilterValues, SortOption } from '@/types'
+import type { AugmentedListing, FilterValues, SortOption } from '@/types'
 
 interface PreviewGridProps {
-  count?: number
+  listings: AugmentedListing[]
 }
 
-export default function PreviewGrid({ count = 32 }: PreviewGridProps) {
+export default function PreviewGrid({ listings: allListings }: PreviewGridProps) {
   const [filters, setFilters] = useState<FilterValues>({ ...FILTER_DEFAULTS })
   const [pending, setPending] = useState<FilterValues>({ ...FILTER_DEFAULTS })
   const [sortBy, setSortBy] = useState<SortOption>('newest')
   const [modalOpen, setModalOpen] = useState(false)
 
-  const allListings = useMemo(() => augmentListings(LISTINGS), [])
   const filtered = useMemo(
     () => filterListings(allListings, filters, sortBy),
     [allListings, filters, sortBy],
@@ -25,10 +24,10 @@ export default function PreviewGrid({ count = 32 }: PreviewGridProps) {
   const items = useMemo(() => {
     const src = filtered.length > 0 ? filtered : allListings
     return Array.from(
-      { length: Math.min(count, src.length) },
-      (_, i) => ({ ...src[i % src.length], _key: i }),
+      { length: src.length },
+      (_, i) => ({ ...src[i], _key: i }),
     )
-  }, [filtered, allListings, count])
+  }, [filtered, allListings])
 
   const activeCount = Object.values(filters).filter((v) => v !== 'all').length
   const activePills = Object.entries(filters)

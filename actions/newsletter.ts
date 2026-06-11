@@ -1,6 +1,7 @@
 'use server'
 
 import { emailSignupSchema } from '@/lib/validations'
+import { subscribeEmail } from '@/lib/db'
 
 type SignupState =
   | { status: 'idle' }
@@ -15,7 +16,11 @@ export async function signupAction(
   if (!parsed.success) {
     return { status: 'error', message: parsed.error.errors[0].message }
   }
-  // TODO: integrate with email provider (Resend, ConvertKit, etc.)
-  await new Promise(r => setTimeout(r, 600))
+
+  const result = await subscribeEmail(parsed.data.email)
+  if (result === 'duplicate') {
+    return { status: 'error', message: "You're already on the list." }
+  }
+
   return { status: 'success', email: parsed.data.email }
 }

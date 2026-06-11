@@ -1,3 +1,5 @@
+import { getListings } from '@/lib/db'
+import { augmentListings } from '@/lib/utils'
 import Header from '@/components/layouts/Header'
 import Footer from '@/components/layouts/Footer'
 import Hero from '@/components/sections/Hero'
@@ -9,15 +11,18 @@ import Pricing from '@/components/sections/Pricing'
 import CommunityBand from '@/components/sections/CommunityBand'
 import FAQ from '@/components/sections/FAQ'
 
-export default function Page() {
+export default async function Page() {
+  const listings = await getListings()
+  const augmented = augmentListings(listings)
+
   return (
     <>
       <a id="top" />
       <Header />
       <main>
         <Hero headlineVariant="classic" />
-        <PicksCarousel count={6} />
-        <PreviewGrid count={32} />
+        <PicksCarousel listings={listings.slice(0, 6)} />
+        <PreviewGrid listings={augmented} />
         <HowItWorks />
         <CuratorBio />
         <Pricing />

@@ -1,0 +1,551 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Cheap Houses" [ref=e4] [cursor=pointer]:
+        - /url: "#top"
+      - navigation [ref=e5]:
+        - link "View listings" [ref=e6] [cursor=pointer]:
+          - /url: "#preview"
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - link "TikTok" [ref=e9] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e10]
+          - link "Instagram" [ref=e12] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e13]
+        - link "Log in" [ref=e16] [cursor=pointer]:
+          - /url: "#"
+        - link "Become a member" [ref=e17] [cursor=pointer]:
+          - /url: "#pricing"
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - heading "Underpriced properties, found and curated across 8 countries." [level=1] [ref=e21]:
+        - text: Underpriced properties,
+        - emphasis [ref=e22]: found and curated
+        - text: across 8 countries.
+      - paragraph [ref=e23]: One curator. Every listing reviewed by hand. No algorithm. No agent fees. No listings that hide the problems.
+      - generic [ref=e24]:
+        - generic [ref=e26]:
+          - textbox "Email address" [ref=e28]:
+            - /placeholder: your@email.com
+          - button "Get Friday's picks" [ref=e29] [cursor=pointer]
+        - paragraph [ref=e30]: Fridays · Free forever · 8,400 readers · Unsubscribe in one click
+      - list "Countries covered" [ref=e31]:
+        - listitem [ref=e32]: 🇺🇸 USA
+        - listitem [ref=e33]: 🇨🇦 Canada
+        - listitem [ref=e34]: 🇪🇸 Spain
+        - listitem [ref=e35]: 🇵🇹 Portugal
+        - listitem [ref=e36]: 🇮🇹 Italy
+        - listitem [ref=e37]: 🇩🇪 Germany
+        - listitem [ref=e38]: 🇸🇪 Sweden
+        - listitem [ref=e39]: 🇯🇵 Japan
+    - generic [ref=e41]:
+      - generic [ref=e42]: Recent picks
+      - generic [ref=e44]:
+        - listitem [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - generic [ref=e48]: Asking price
+              - generic [ref=e49]: €28,000
+            - generic [ref=e50]: 🇵🇹 Portugal
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: Alentejo · Portugal
+            - heading "Stone farmhouse with 3,800m² of land" [level=3] [ref=e53]
+            - generic [ref=e54]:
+              - generic [ref=e55]: 3 rooms
+              - generic [ref=e56]: 140 m²
+              - generic [ref=e57]: Fixer-upper
+            - generic [ref=e58]: Curator's note
+            - paragraph [ref=e59]:
+              - text: The roof collapsed in the east wing in the 90s and was never fixed.
+              - strong [ref=e60]: The rest of the structure is solid
+              - text: — a local builder in Évora estimated €17–22K to make it livable. The land is 3,800m² with olive trees. No agent; contact the municipal office directly.
+            - button "Read more" [ref=e61] [cursor=pointer]
+        - listitem [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - generic [ref=e65]: Asking price
+              - generic [ref=e66]: €19,000
+            - generic [ref=e67]: 🇮🇹 Italy
+          - generic [ref=e68]:
+            - paragraph [ref=e69]: Calabria · Italy
+            - heading "2-bedroom stone house, 11 years in probate" [level=3] [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]: 2 rooms
+              - generic [ref=e73]: 85 m²
+              - generic [ref=e74]: Rewire needed
+            - generic [ref=e75]: Curator's note
+            - paragraph [ref=e76]:
+              - text: Inherited by three siblings who could not agree on a sale price for a decade.
+              - strong [ref=e77]: The probate is now resolved
+              - text: ; they want it gone before tax season. Habitable as-is but the wiring is from the 70s and would need a full pass. Shared wall both sides. Comune wants new residents.
+            - button "Read more" [ref=e78] [cursor=pointer]
+        - listitem [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]: Asking price
+              - generic [ref=e83]: €26,000
+            - generic [ref=e84]: 🇩🇪 Germany
+          - generic [ref=e85]:
+            - paragraph [ref=e86]: Mecklenburg · Germany
+            - heading "Brick farmhouse on 1.2 hectares" [level=3] [ref=e87]
+            - generic [ref=e88]:
+              - generic [ref=e89]: 4 rooms
+              - generic [ref=e90]: 180 m²
+              - generic [ref=e91]: Agricultural
+            - generic [ref=e92]: Curator's note
+            - paragraph [ref=e93]:
+              - text: Classified agricultural — a foreigner can buy it but converting to residential takes 18 months of municipal paperwork.
+              - strong [ref=e94]: The building itself is in good shape
+              - text: ": new roof in 2018, dry inside, original parquet under the lino. Land has two outbuildings and an old apple orchard."
+            - button "Read more" [ref=e95] [cursor=pointer]
+        - listitem [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - generic [ref=e99]: Asking price
+              - generic [ref=e100]: €13,500
+            - generic [ref=e101]: 🇪🇸 Spain
+          - generic [ref=e102]:
+            - paragraph [ref=e103]: Galicia · Spain
+            - heading "Granite cottage, single-lane road access" [level=3] [ref=e104]
+            - generic [ref=e105]:
+              - generic [ref=e106]: 2 rooms
+              - generic [ref=e107]: 80 m²
+              - generic [ref=e108]: No mains gas
+            - generic [ref=e109]: Curator's note
+            - paragraph [ref=e110]:
+              - text: The lowest-priced thing in this newsletter all year.
+              - strong [ref=e111]: "It is cheap for reasons:"
+              - text: no mains gas, no central heating, and a 4km single-lane road that floods in November. Roof is solid, walls are 60cm granite, dry inside. The previous owner cooked in the courtyard.
+            - button "Read more" [ref=e112] [cursor=pointer]
+        - listitem [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - generic [ref=e116]: Asking price
+              - generic [ref=e117]: ¥3.2M
+            - generic [ref=e118]: 🇯🇵 Japan
+          - generic [ref=e119]:
+            - paragraph [ref=e120]: Hyogo Prefecture · Japan
+            - heading "Akiya farmhouse with rice field views" [level=3] [ref=e121]
+            - generic [ref=e122]:
+              - generic [ref=e123]: 5 rooms
+              - generic [ref=e124]: 120 m²
+              - generic [ref=e125]: Vacant home
+            - generic [ref=e126]: Curator's note
+            - paragraph [ref=e127]:
+              - text: 12 years empty. Structural inspection mandatory before any sale — budget ¥150K for it.
+              - strong [ref=e128]: Tatami rooms need replacing
+              - text: but the post-and-beam frame is original cedar and tight. The village has a relocation grant that can offset up to ¥2M of the work for residents under 40.
+            - button "Read more" [ref=e129] [cursor=pointer]
+        - listitem [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - generic [ref=e133]: Asking price
+              - generic [ref=e134]: $35,000
+            - generic [ref=e135]: 🇺🇸 USA
+          - generic [ref=e136]:
+            - paragraph [ref=e137]: Pocahontas County · West Virginia
+            - heading "Mountain bungalow on 1.2 acres" [level=3] [ref=e138]
+            - generic [ref=e139]:
+              - generic [ref=e140]: 2 rooms
+              - generic [ref=e141]: 85 m²
+              - generic [ref=e142]: Cosmetic
+            - generic [ref=e143]: Curator's note
+            - paragraph [ref=e144]:
+              - text: Estate sale. Cosmetic work only — floors, paint, one window.
+              - strong [ref=e145]: Septic was redone in 2019.
+              - text: 35 minutes to the nearest grocery; an hour to a hospital. If you want quiet, this is quiet. If you want delivery, this is not the listing for you.
+            - button "Read more" [ref=e146] [cursor=pointer]
+      - generic [ref=e147]:
+        - generic [ref=e148]: 1 / 6
+        - tablist "Carousel pages" [ref=e149]:
+          - button "Go to pick 1" [ref=e150] [cursor=pointer]
+          - button "Go to pick 2" [ref=e151] [cursor=pointer]
+          - button "Go to pick 3" [ref=e152] [cursor=pointer]
+          - button "Go to pick 4" [ref=e153] [cursor=pointer]
+          - button "Go to pick 5" [ref=e154] [cursor=pointer]
+          - button "Go to pick 6" [ref=e155] [cursor=pointer]
+        - generic [ref=e156]:
+          - button "Previous pick" [disabled] [ref=e157]:
+            - img [ref=e158]
+          - button "Next pick" [ref=e160] [cursor=pointer]:
+            - img [ref=e161]
+    - generic [ref=e164]:
+      - generic [ref=e166]:
+        - heading "From this month's shortlist" [level=2] [ref=e167]:
+          - text: From this month's
+          - emphasis [ref=e168]: shortlist
+        - paragraph [ref=e169]: 16 of 200+ properties reviewed
+      - generic [ref=e170]:
+        - button "Filters" [ref=e171] [cursor=pointer]:
+          - img [ref=e172]
+          - text: Filters
+        - generic [ref=e173]:
+          - generic [ref=e174]: Sort
+          - combobox "Sort" [ref=e175] [cursor=pointer]:
+            - option "Newest first" [selected]
+            - 'option "Price: low to high"'
+            - 'option "Price: high to low"'
+      - generic [ref=e176]:
+        - link "Stone farmhouse with 3,800m² of land in Alentejo, Portugal" [ref=e177] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e178]:
+            - generic [ref=e179]: 🇵🇹 Portugal
+            - generic [ref=e180]: New
+          - generic [ref=e181]:
+            - generic [ref=e182]: €28,000
+            - generic [ref=e183]: Alentejo, Portugal
+            - generic [ref=e184]: Stone farmhouse with 3,800m² of land
+            - generic [ref=e185]:
+              - generic [ref=e186]: 3 rooms
+              - generic [ref=e187]: 140 m²
+              - generic [ref=e188]: Fixer-upper
+        - link "2-bedroom stone house, 11 years in probate in Calabria, Italy" [ref=e189] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e190]:
+            - generic [ref=e191]: 🇮🇹 Italy
+            - generic [ref=e192]: New
+          - generic [ref=e193]:
+            - generic [ref=e194]: €19,000
+            - generic [ref=e195]: Calabria, Italy
+            - generic [ref=e196]: 2-bedroom stone house, 11 years in probate
+            - generic [ref=e197]:
+              - generic [ref=e198]: 2 rooms
+              - generic [ref=e199]: 85 m²
+              - generic [ref=e200]: Rewire needed
+        - link "Akiya farmhouse with rice field views in Hyogo, Japan" [ref=e201] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e202]:
+            - generic [ref=e203]: 🇯🇵 Japan
+            - generic [ref=e204]: New
+          - generic [ref=e205]:
+            - generic [ref=e206]: ¥3.2M
+            - generic [ref=e207]: Hyogo, Japan
+            - generic [ref=e208]: Akiya farmhouse with rice field views
+            - generic [ref=e209]:
+              - generic [ref=e210]: 5 rooms
+              - generic [ref=e211]: 120 m²
+              - generic [ref=e212]: Vacant home
+        - link "Red timber cottage near lake in Dalarna, Sweden" [ref=e213] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e214]:
+            - generic [ref=e215]: 🇸🇪 Sweden
+            - generic [ref=e216]: New
+          - generic [ref=e217]:
+            - generic [ref=e218]: €43,000
+            - generic [ref=e219]: Dalarna, Sweden
+            - generic [ref=e220]: Red timber cottage near lake
+            - generic [ref=e221]:
+              - generic [ref=e222]: 2 rooms
+              - generic [ref=e223]: 70 m²
+              - generic [ref=e224]: Falu red
+        - link "One-euro townhouse, Mussomeli scheme in Sicily, Italy" [ref=e225] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e226]:
+            - generic [ref=e227]: 🇮🇹 Italy
+            - generic [ref=e228]: New
+          - generic [ref=e229]:
+            - generic [ref=e230]: €1
+            - generic [ref=e231]: Sicily, Italy
+            - generic [ref=e232]: One-euro townhouse, Mussomeli scheme
+            - generic [ref=e233]:
+              - generic [ref=e234]: 4 rooms
+              - generic [ref=e235]: 95 m²
+              - generic [ref=e236]: Reno obligation
+        - link "Hunting cabin on 6 wooded acres in NEK, Vermont" [ref=e237] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e238]:
+            - generic [ref=e239]: 🇺🇸 Vermont
+            - generic [ref=e240]: New
+          - generic [ref=e241]:
+            - generic [ref=e242]: $48,000
+            - generic [ref=e243]: NEK, Vermont
+            - generic [ref=e244]: Hunting cabin on 6 wooded acres
+            - generic [ref=e245]:
+              - generic [ref=e246]: 1 room
+              - generic [ref=e247]: 40 m²
+              - generic [ref=e248]: Off-grid
+        - link "Cedar-shingle home on 8 acres in New Brunswick, Canada" [ref=e249] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e250]:
+            - generic [ref=e251]: 🇨🇦 New Brunswick
+            - generic [ref=e252]: New
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - generic [ref=e255]: CA$
+              - text: 72,000
+            - generic [ref=e256]: New Brunswick, Canada
+            - generic [ref=e257]: Cedar-shingle home on 8 acres
+            - generic [ref=e258]:
+              - generic [ref=e259]: 4 rooms
+              - generic [ref=e260]: 140 m²
+              - generic [ref=e261]: Move-in
+        - link "Brick farmhouse on 1.2 hectares in Mecklenburg, Germany" [ref=e262] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e264]: 🇩🇪 Germany
+          - generic [ref=e265]:
+            - generic [ref=e266]: €26,000
+            - generic [ref=e267]: Mecklenburg, Germany
+            - generic [ref=e268]: Brick farmhouse on 1.2 hectares
+            - generic [ref=e269]:
+              - generic [ref=e270]: 4 rooms
+              - generic [ref=e271]: 180 m²
+              - generic [ref=e272]: Agricultural
+        - link "Granite cottage, single-lane road access in Galicia, Spain" [ref=e273] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e275]: 🇪🇸 Spain
+          - generic [ref=e276]:
+            - generic [ref=e277]: €13,500
+            - generic [ref=e278]: Galicia, Spain
+            - generic [ref=e279]: Granite cottage, single-lane road access
+            - generic [ref=e280]:
+              - generic [ref=e281]: 2 rooms
+              - generic [ref=e282]: 80 m²
+              - generic [ref=e283]: No mains gas
+        - link "Mountain bungalow on 1.2 acres in Pocahontas Co., WV" [ref=e284] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e286]: 🇺🇸 West Virginia
+          - generic [ref=e287]:
+            - generic [ref=e288]: $35,000
+            - generic [ref=e289]: Pocahontas Co., WV
+            - generic [ref=e290]: Mountain bungalow on 1.2 acres
+            - generic [ref=e291]:
+              - generic [ref=e292]: 2 rooms
+              - generic [ref=e293]: 85 m²
+              - generic [ref=e294]: Cosmetic
+        - link "Century farmhouse, 4 acres of cleared land in Nova Scotia, Canada" [ref=e295] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e297]: 🇨🇦 Nova Scotia
+          - generic [ref=e298]:
+            - generic [ref=e299]:
+              - generic [ref=e300]: CA$
+              - text: 58,000
+            - generic [ref=e301]: Nova Scotia, Canada
+            - generic [ref=e302]: Century farmhouse, 4 acres of cleared land
+            - generic [ref=e303]:
+              - generic [ref=e304]: 3 rooms
+              - generic [ref=e305]: 110 m²
+              - generic [ref=e306]: New roof 2022
+        - link "Village house with vineyard and well in Beira Baixa, Portugal" [ref=e307] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e309]: 🇵🇹 Portugal
+          - generic [ref=e310]:
+            - generic [ref=e311]: €47,500
+            - generic [ref=e312]: Beira Baixa, Portugal
+            - generic [ref=e313]: Village house with vineyard and well
+            - generic [ref=e314]:
+              - generic [ref=e315]: 3 rooms
+              - generic [ref=e316]: 120 m²
+              - generic [ref=e317]: Habitable
+        - link "Stone longère with attached barn in Creuse, France" [ref=e318] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e320]: 🇫🇷 France
+          - generic [ref=e321]:
+            - generic [ref=e322]: €36,000
+            - generic [ref=e323]: Creuse, France
+            - generic [ref=e324]: Stone longère with attached barn
+            - generic [ref=e325]:
+              - generic [ref=e326]: 3 rooms
+              - generic [ref=e327]: 110 m²
+              - generic [ref=e328]: Habitable
+        - link "Adobe village house, three floors in Aragon, Spain" [ref=e329] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e331]: 🇪🇸 Spain
+          - generic [ref=e332]:
+            - generic [ref=e333]: €24,000
+            - generic [ref=e334]: Aragon, Spain
+            - generic [ref=e335]: Adobe village house, three floors
+            - generic [ref=e336]:
+              - generic [ref=e337]: 5 rooms
+              - generic [ref=e338]: 160 m²
+              - generic [ref=e339]: Light reno
+        - link "Mountain akiya on terraced land in Tokushima, Japan" [ref=e340] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e342]: 🇯🇵 Japan
+          - generic [ref=e343]:
+            - generic [ref=e344]: ¥2.8M
+            - generic [ref=e345]: Tokushima, Japan
+            - generic [ref=e346]: Mountain akiya on terraced land
+            - generic [ref=e347]:
+              - generic [ref=e348]: 4 rooms
+              - generic [ref=e349]: 95 m²
+              - generic [ref=e350]: Akiya bank
+        - link "Half-timbered townhouse, three floors in Saxony-Anhalt, Germany" [ref=e351] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e353]: 🇩🇪 Germany
+          - generic [ref=e354]:
+            - generic [ref=e355]: €55,000
+            - generic [ref=e356]: Saxony-Anhalt, Germany
+            - generic [ref=e357]: Half-timbered townhouse, three floors
+            - generic [ref=e358]:
+              - generic [ref=e359]: 6 rooms
+              - generic [ref=e360]: 195 m²
+              - generic [ref=e361]: Listed
+    - generic [ref=e363]:
+      - heading "What you get in your inbox" [level=2] [ref=e364]:
+        - text: What you get in your
+        - emphasis [ref=e365]: inbox
+      - generic [ref=e366]:
+        - generic [ref=e367]:
+          - generic [ref=e368]: "01"
+          - img [ref=e370]
+          - generic [ref=e373]: We scout, every day
+          - paragraph [ref=e374]: Estate sales, municipal auctions, inheritance disputes, motivated sellers who never made it onto Idealista or Rightmove. 200+ candidates pass through the queue each week.
+        - generic [ref=e375]:
+          - generic [ref=e376]: "02"
+          - img [ref=e378]
+          - generic [ref=e381]: We name the catch
+          - paragraph [ref=e382]: Every property gets a hand-written note. Roof, plumbing, legal status, neighbours, distance to a real grocery. We tell you what'll cost money before you fly out.
+        - generic [ref=e383]:
+          - generic [ref=e384]: "03"
+          - img [ref=e386]
+          - generic [ref=e389]: You read it Friday
+          - paragraph [ref=e390]: One email. Eight properties. Direct contact details for sellers or municipal offices. No paywall, no upsell, no algorithm picking what you see.
+    - generic [ref=e392]:
+      - generic [ref=e393]: M
+      - generic [ref=e394]:
+        - generic [ref=e395]:
+          - generic [ref=e396]: Marcus Holt
+          - generic [ref=e397]: · Founder & curator
+        - paragraph [ref=e398]: I'm a writer and property researcher who spent three years buying a farmhouse in rural Portugal for €31K. That experience — full of dead ends, bad agents, and hidden gems — became the reason this newsletter exists. I now track underpriced real estate full-time across 8 countries and share only what I'd buy myself.
+        - generic [ref=e399]:
+          - link "Read the about page" [ref=e400] [cursor=pointer]:
+            - /url: "#"
+          - link "Email Marcus directly" [ref=e401] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=e403]:
+      - generic [ref=e404]: Membership
+      - generic [ref=e405]:
+        - heading "Two ways to read Cheap Houses" [level=2] [ref=e406]:
+          - text: Two ways to read
+          - emphasis [ref=e407]: Cheap Houses
+        - paragraph [ref=e408]: The newsletter is free, forever. Membership unlocks the full archive, direct seller contacts, and country search.
+        - generic [ref=e409]:
+          - button "Monthly" [ref=e410] [cursor=pointer]
+          - button "Annual Save 33%" [ref=e411] [cursor=pointer]:
+            - text: Annual
+            - generic [ref=e412]: Save 33%
+      - generic [ref=e413]:
+        - generic [ref=e414]:
+          - generic [ref=e415]: Free
+          - generic [ref=e416]:
+            - generic [ref=e417]: Free
+            - generic [ref=e418]: / forever
+          - paragraph [ref=e419]: Eight hand-picked properties every Friday. No credit card, no catch.
+          - list [ref=e421]:
+            - listitem [ref=e422]:
+              - img [ref=e423]
+              - generic [ref=e425]: 8 properties per issue
+            - listitem [ref=e426]:
+              - img [ref=e427]
+              - generic [ref=e429]: Curator's note on every listing
+            - listitem [ref=e430]:
+              - img [ref=e431]
+              - generic [ref=e433]: 8 countries covered
+            - listitem [ref=e434]:
+              - img [ref=e435]
+              - generic [ref=e437]: Delivered every Friday
+          - link "Get the free newsletter" [ref=e438] [cursor=pointer]:
+            - /url: "#signup"
+        - generic [ref=e439]:
+          - generic [ref=e440]: Member
+          - generic [ref=e441]:
+            - generic [ref=e442]: $10
+            - generic [ref=e443]: / month, billed annually
+          - paragraph [ref=e444]: The complete picture. Every property we find, the contacts you need to act on it — no agents, no waiting.
+          - list [ref=e446]:
+            - listitem [ref=e447]:
+              - img [ref=e448]
+              - generic [ref=e450]: 20+ properties per issue, full archive
+            - listitem [ref=e451]:
+              - img [ref=e452]
+              - generic [ref=e454]: Direct seller & municipal contacts
+            - listitem [ref=e455]:
+              - img [ref=e456]
+              - generic [ref=e458]: Search by country, budget & condition
+          - link "Become a member" [ref=e459] [cursor=pointer]:
+            - /url: "#"
+          - paragraph [ref=e460]: Cancel any time · No lock-in
+    - generic [ref=e462]:
+      - generic [ref=e463]: Stay in the loop
+      - heading "Get underpriced properties in your inbox." [level=2] [ref=e464]:
+        - text: Get underpriced properties
+        - text: in your
+        - emphasis [ref=e465]: inbox.
+      - paragraph [ref=e466]: Fridays. Eight properties, hand-checked, with the catch named before you click. No spam, no agent emails, unsubscribe in one click.
+      - generic [ref=e469]:
+        - textbox "Email address" [ref=e471]:
+          - /placeholder: your@email.com
+        - button "Get Friday's picks" [ref=e472] [cursor=pointer]
+    - generic [ref=e474]:
+      - heading "Frequently asked questions" [level=2] [ref=e475]
+      - generic [ref=e476]:
+        - button "What is Cheap Houses?" [ref=e477] [cursor=pointer]:
+          - generic [ref=e478]: What is Cheap Houses?
+          - img [ref=e480]
+        - paragraph [ref=e482]: A curated selection of underpriced properties from around the world. We review 200+ listings every week and publish only the ones worth a second look — with direct seller contact info and renovation estimates where available.
+      - generic [ref=e483]:
+        - button "What countries do you cover?" [ref=e484] [cursor=pointer]:
+          - generic [ref=e485]: What countries do you cover?
+          - img [ref=e487]
+        - paragraph [ref=e489]: USA, Canada, Spain, Portugal, Italy, Germany, Sweden, and Japan. More countries are coming — we expand when we find a reliable source of good listings.
+      - generic [ref=e490]:
+        - button "What's the price ceiling?" [ref=e491] [cursor=pointer]:
+          - generic [ref=e492]: What's the price ceiling?
+          - img [ref=e494]
+        - paragraph [ref=e496]: $199K is the hard ceiling. Most listings are well below that — often under $50K. The point is finding properties that are genuinely underpriced relative to their condition, location, or potential.
+      - generic [ref=e497]:
+        - button "Why are these properties so cheap?" [ref=e498] [cursor=pointer]:
+          - generic [ref=e499]: Why are these properties so cheap?
+          - img [ref=e501]
+        - paragraph [ref=e503]: "Different reasons every time — and we always explain which one. Common reasons: location (rural, remote), condition (needs work, rewiring), legal complexity (probate, agricultural classification), or a motivated seller who wants to close fast. The catch is always in the note."
+      - generic [ref=e504]:
+        - button "Is it free?" [ref=e505] [cursor=pointer]:
+          - generic [ref=e506]: Is it free?
+          - img [ref=e508]
+        - paragraph [ref=e510]: Browsing is free — you can see listings and prices. Full access, including direct seller contacts, renovation estimates, and the complete archive, requires a Membership. $10/month billed annually, or $15/month month-to-month.
+      - generic [ref=e511]:
+        - button "What does membership include exactly?" [ref=e512] [cursor=pointer]:
+          - generic [ref=e513]: What does membership include exactly?
+          - img [ref=e515]
+        - paragraph [ref=e517]: Full access to every listing in the archive, direct seller and municipal contact info, renovation estimates where available, and search by country, budget, and condition. No ads, no agents, no commission. Cancel anytime.
+      - generic [ref=e518]:
+        - button "How do I cancel?" [ref=e519] [cursor=pointer]:
+          - generic [ref=e520]: How do I cancel?
+          - img [ref=e522]
+        - paragraph [ref=e524]:
+          - text: One click in your account settings. No retention flow, no confirmation screen, no guilt-trip. Cancel anytime and you keep access until the end of your billing period.
+          - link "Go to account →" [ref=e525] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e526]:
+        - button "Can foreigners actually buy in these countries?" [ref=e527] [cursor=pointer]:
+          - generic [ref=e528]: Can foreigners actually buy in these countries?
+          - img [ref=e530]
+        - paragraph [ref=e532]: "Yes, in all 8 countries — but the process varies. Japan and Portugal are the most foreigner-friendly: open ownership, no restrictions. Spain, Italy, and Germany are open but involve more bureaucracy — expect 3–9 months to close. We flag the caveats in every listing note."
+      - generic [ref=e533]:
+        - button "How much does it really cost to buy?" [ref=e534] [cursor=pointer]:
+          - generic [ref=e535]: How much does it really cost to buy?
+          - img [ref=e537]
+        - paragraph [ref=e539]: "The asking price is only part of it. Every country adds transaction costs — taxes, notary fees, sometimes agent commission. Rough guide: Portugal 6–8%, Spain 10–14%, Italy 9–15%, Germany 7–12%, Sweden 4–6%, Japan 6–8%, USA 2–5%, Canada 3–6%."
+  - contentinfo [ref=e540]:
+    - generic [ref=e541]:
+      - generic [ref=e542]:
+        - generic [ref=e543]: Cheap Houses
+        - generic [ref=e544]: Underpriced properties, curated weekly
+      - generic [ref=e545]:
+        - paragraph [ref=e546]: © 2026 Cheap Houses. All rights reserved.
+        - generic [ref=e547]:
+          - generic "Social media" [ref=e548]:
+            - link "Instagram" [ref=e549] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e550]
+            - link "TikTok" [ref=e553] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e554]
+            - link "YouTube" [ref=e556] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e557]
+          - link "hello@cheaphouses.com" [ref=e559] [cursor=pointer]:
+            - /url: mailto:hello@cheaphouses.com
+  - alert [ref=e560]
