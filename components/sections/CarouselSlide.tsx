@@ -13,10 +13,16 @@ interface CarouselSlideProps {
 export default function CarouselSlide({ listing: l, expanded, onToggle }: CarouselSlideProps) {
   return (
     <div className="pick-slide" role="listitem">
-      <div
+      <a
         className="pick-img"
+        href={l.link ?? '#'}
+        target={l.link ? '_blank' : undefined}
+        rel={l.link ? 'noopener noreferrer' : undefined}
+        aria-label={l.link ? `View original listing: ${l.title}` : undefined}
         style={{
+          display: 'block',
           background: `url('${l.image}') center/cover, ${LISTING_TONES[l.tone]}`,
+          cursor: l.link ? 'pointer' : 'default',
         }}
       >
         <div className="pick-img-grain" aria-hidden="true" />
@@ -28,9 +34,9 @@ export default function CarouselSlide({ listing: l, expanded, onToggle }: Carous
           </span>
         </div>
         <div className="pick-country-badge">
-          {l.countryShort}
+          {l.stateShort}
         </div>
-      </div>
+      </a>
       <div className="pick-body">
         <p className="pick-loc">{l.location}</p>
         <h3 className="pick-title">{l.title}</h3>
@@ -46,6 +52,16 @@ export default function CarouselSlide({ listing: l, expanded, onToggle }: Carous
         <button className="read-more-btn" onClick={onToggle} aria-expanded={expanded}>
           {expanded ? 'Read less' : 'Read more'}
         </button>
+        {l.link && (
+          <a
+            className="view-listing-link"
+            href={l.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View original listing →
+          </a>
+        )}
       </div>
     </div>
   )

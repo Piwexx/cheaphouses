@@ -12,7 +12,9 @@ export default function ListingCard({ listing: l }: ListingCardProps) {
   return (
     <a
       className="listing-card"
-      href="#"
+      href={l.link ?? '#'}
+      target={l.link ? '_blank' : undefined}
+      rel={l.link ? 'noopener noreferrer' : undefined}
       aria-label={`${l.title} in ${l.locationShort}`}
     >
       <div

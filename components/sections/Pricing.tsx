@@ -18,7 +18,7 @@ export default function Pricing() {
           </h2>
           <p className="pricing-sub">
             The newsletter is free, forever. Membership unlocks the full archive,
-            direct seller contacts, and country search.
+            direct seller contacts, and state search.
           </p>
           <div className="billing-toggle">
             <button
@@ -76,7 +76,7 @@ export default function Pricing() {
             <ul className="plan-features">
               <li><CheckIcon /><span>20+ properties per issue, full archive</span></li>
               <li><CheckIcon /><span>Direct seller &amp; municipal contacts</span></li>
-              <li><CheckIcon /><span>Search by country, budget &amp; condition</span></li>
+              <li><CheckIcon /><span>Search by state, budget &amp; condition</span></li>
             </ul>
             <a href="#" className="plan-cta plan-cta--accent">
               Become a member

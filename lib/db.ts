@@ -18,9 +18,8 @@ function getSupabase() {
 
 interface ListingRow {
   id:              number
-  country:         string
-  flag:            string
-  country_short:   string
+  state:           string
+  state_short:     string
   location:        string
   location_short:  string
   price:           string
@@ -29,6 +28,7 @@ interface ListingRow {
   meta:            string[]
   note:            string
   image:           string
+  link:            string | null
   tone:            string
   is_new:          boolean
 }
@@ -39,9 +39,8 @@ function rowToListing(row: ListingRow): Listing {
   if (!VALID_TONES.has(row.tone)) throw new Error(`Unknown tone value: ${row.tone}`)
   return {
     id:            row.id,
-    country:       row.country,
-    flag:          row.flag,
-    countryShort:  row.country_short,
+    state:         row.state,
+    stateShort:    row.state_short,
     location:      row.location,
     locationShort: row.location_short,
     price:         row.price,
@@ -50,6 +49,7 @@ function rowToListing(row: ListingRow): Listing {
     meta:          row.meta,
     note:          row.note,
     image:         row.image,
+    link:          row.link,
     tone:          row.tone as ListingTone,
     isNew:         row.is_new,
   }

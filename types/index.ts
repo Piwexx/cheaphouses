@@ -2,9 +2,8 @@ export type ListingTone = 'olive' | 'terracotta' | 'granite' | 'cedar' | 'pine' 
 
 export interface Listing {
   id: number
-  country: string
-  flag: string
-  countryShort: string
+  state: string
+  stateShort: string
   location: string
   locationShort: string
   price: string
@@ -13,6 +12,7 @@ export interface Listing {
   meta: string[]
   note: string
   image: string
+  link: string | null
   tone: ListingTone
   isNew: boolean
 }
