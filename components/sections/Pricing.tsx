@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { createCheckoutSessionAction } from '@/actions/billing'
 import { CheckIcon } from '@/components/ui/icons'
 import type { BillingCycle } from '@/types'
 
@@ -78,9 +79,12 @@ export default function Pricing() {
               <li><CheckIcon /><span>Direct seller &amp; municipal contacts</span></li>
               <li><CheckIcon /><span>Search by state, budget &amp; condition</span></li>
             </ul>
-            <a href="#" className="plan-cta plan-cta--accent">
-              Become a member
-            </a>
+            <form action={createCheckoutSessionAction}>
+              <input type="hidden" name="billing" value={billing} />
+              <button type="submit" className="plan-cta plan-cta--accent plan-cta--full">
+                Become a member
+              </button>
+            </form>
             <p className="plan-fine">Cancel any time · No lock-in</p>
           </div>
         </div>

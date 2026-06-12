@@ -1,4 +1,17 @@
+import { Suspense } from 'react'
 import { TikTokIcon, InstagramIcon } from '@/components/ui/icons'
+import { getCurrentUser } from '@/lib/supabase/server'
+
+// Session-dependent link is isolated here so the rest of the header (and the
+// pages using it) stays statically prerenderable under cacheComponents.
+async function AuthLink() {
+  const user = await getCurrentUser()
+  return user ? (
+    <a className="hdr-login" href="/dashboard">Dashboard</a>
+  ) : (
+    <a className="hdr-login" href="/login">Log in</a>
+  )
+}
 
 export default function Header() {
   return (
@@ -17,7 +30,9 @@ export default function Header() {
               <InstagramIcon />
             </a>
           </div>
-          <a className="hdr-login" href="#">Log in</a>
+          <Suspense fallback={<a className="hdr-login" href="/login">Log in</a>}>
+            <AuthLink />
+          </Suspense>
           <a className="hdr-cta" href="#pricing">Become a member</a>
         </div>
       </div>

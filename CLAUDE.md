@@ -9,7 +9,8 @@
 - **Framework**: Next.js 16 con App Router (TypeScript estricto)
 - **Estilos**: Tailwind CSS v4 + shadcn/ui para componentes
 - **Base de datos**: PostgreSQL vía Supabase (cliente server-side en Server Components)
-- **Auth**: Auth.js v5 (next-auth)
+- **Auth**: Supabase Auth vía `@supabase/ssr` (email+contraseña y magic link; sesión en cookies, refresh en `proxy.ts`)
+- **Pagos**: Stripe (Checkout + Customer Portal, webhook en `app/api/webhooks/stripe`)
 - **API**: Route Handlers en `app/api/` + Server Actions para mutaciones
 - **Estado global**: Zustand (solo client-side, estado mínimo necesario)
 - **Fetching**: fetch nativo en Server Components, React Query solo en Client Components

@@ -124,6 +124,97 @@ export async function getFaqs(): Promise<Faq[]> {
   }))
 }
 
+export interface SubscriptionRecord {
+  userId:               string
+  stripeCustomerId:     string
+  stripeSubscriptionId: string
+  priceId:              string
+  status:               string
+  cancelAtPeriodEnd:    boolean
+  currentPeriodStart:   string | null
+  currentPeriodEnd:     string | null
+}
+
+interface SubscriptionRow {
+  user_id:                string
+  stripe_customer_id:     string
+  stripe_subscription_id: string
+  price_id:               string
+  status:                 string
+  cancel_at_period_end:   boolean
+  current_period_start:   string | null
+  current_period_end:     string | null
+}
+
+function rowToSubscription(row: SubscriptionRow): SubscriptionRecord {
+  return {
+    userId:               row.user_id,
+    stripeCustomerId:     row.stripe_customer_id,
+    stripeSubscriptionId: row.stripe_subscription_id,
+    priceId:              row.price_id,
+    status:               row.status,
+    cancelAtPeriodEnd:    row.cancel_at_period_end,
+    currentPeriodStart:   row.current_period_start,
+    currentPeriodEnd:     row.current_period_end,
+  }
+}
+
+export async function upsertSubscription(record: SubscriptionRecord): Promise<void> {
+  const supabase = getSupabase()
+  const { error } = await supabase.from('subscriptions').upsert(
+    {
+      user_id:                record.userId,
+      stripe_customer_id:     record.stripeCustomerId,
+      stripe_subscription_id: record.stripeSubscriptionId,
+      price_id:               record.priceId,
+      status:                 record.status,
+      cancel_at_period_end:   record.cancelAtPeriodEnd,
+      current_period_start:   record.currentPeriodStart,
+      current_period_end:     record.currentPeriodEnd,
+    },
+    { onConflict: 'stripe_subscription_id' },
+  )
+  if (error) throw new Error(`upsertSubscription: ${error.message}`)
+}
+
+// No 'use cache': per-user data that must reflect webhook updates immediately
+export async function getSubscriptionForUser(
+  userId: string,
+): Promise<SubscriptionRecord | null> {
+  const supabase = getSupabase()
+  const { data, error } = await supabase
+    .from('subscriptions')
+    .select('*')
+    .eq('user_id', userId)
+    .order('created_at', { ascending: false })
+    .limit(1)
+    .maybeSingle()
+
+  if (error) throw new Error(`getSubscriptionForUser: ${error.message}`)
+  return data ? rowToSubscription(data as SubscriptionRow) : null
+}
+
+export async function getStripeCustomerIdForUser(userId: string): Promise<string | null> {
+  const sub = await getSubscriptionForUser(userId)
+  return sub?.stripeCustomerId ?? null
+}
+
+export async function getUserIdByStripeCustomerId(
+  stripeCustomerId: string,
+): Promise<string | null> {
+  const supabase = getSupabase()
+  const { data, error } = await supabase
+    .from('subscriptions')
+    .select('user_id')
+    .eq('stripe_customer_id', stripeCustomerId)
+    .order('created_at', { ascending: false })
+    .limit(1)
+    .maybeSingle()
+
+  if (error) throw new Error(`getUserIdByStripeCustomerId: ${error.message}`)
+  return data?.user_id ?? null
+}
+
 export async function confirmSubscriber(
   token: string,
 ): Promise<'confirmed' | 'invalid' | 'expired' | 'already_confirmed'> {

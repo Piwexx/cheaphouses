@@ -553,6 +553,7 @@ code, .mono { font-family: var(--mono); font-size: 12px; color: var(--ink); }
 .plan-cta--outline:hover { background: var(--ink); color: var(--white); }
 .plan-cta--accent { background: var(--accent); color: var(--white); border: 1px solid transparent; }
 .plan-cta--accent:hover { background: var(--accent-hov); }
+.plan-cta--full { width: 100%; }
 .plan-fine { font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); text-align: center; margin: 10px 0 0; }
 @media (max-width: 768px) { .pricing { padding: 48px 20px; } .pricing-grid { grid-template-columns: 1fr; } .plan-card { padding: 28px 24px; } }
 
@@ -576,3 +577,95 @@ code, .mono { font-family: var(--mono); font-size: 12px; color: var(--ink); }
   .foot-copy { order: 2; }
   .foot-right { order: 1; align-items: flex-start; }
 }
+
+/* ============================================================
+   AUTH (login / register)
+   ============================================================ */
+.auth-page {
+  min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 32px; padding: 48px 20px; background: var(--paper);
+}
+.auth-wordmark { font-size: 18px; }
+.auth-card {
+  width: 100%; max-width: 400px; background: var(--white); border: var(--border);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-card); padding: 36px 32px;
+}
+.auth-title { font-family: var(--serif); font-size: 28px; font-weight: 500; color: var(--ink); margin: 8px 0 20px; }
+.auth-notice {
+  font-family: var(--body); font-size: 13px; font-style: italic; color: var(--accent);
+  background: var(--accent-lt); border: 1px solid var(--accent-bd); border-radius: var(--radius-md);
+  padding: 10px 14px; margin-bottom: 18px; line-height: 1.6;
+}
+.auth-notice--warn { color: var(--warn); background: var(--warn-lt); border-color: var(--warn-bd); }
+.auth-tabs { display: flex; gap: 4px; border: var(--border); border-radius: var(--radius-pill); padding: 3px; margin-bottom: 20px; }
+.auth-tab {
+  flex: 1; font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-muted); padding: 8px 10px; border-radius: var(--radius-pill); transition: all var(--t-fast);
+}
+.auth-tab.active { background: var(--ink); color: var(--white); }
+.auth-label {
+  display: block; font-family: var(--mono); font-size: var(--label-size); letter-spacing: var(--label-letter);
+  text-transform: uppercase; color: var(--ink-muted); margin: 14px 0 6px;
+}
+.auth-input {
+  width: 100%; background: var(--white); border: var(--border); border-radius: var(--radius-md);
+  font-family: var(--body); font-size: 14px; color: var(--ink); padding: 11px 14px;
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+.auth-input:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 3px rgba(26,25,22,.06); }
+.auth-input::placeholder { color: var(--ink-faint); }
+.auth-btn {
+  width: 100%; margin-top: 20px; background: var(--accent); color: var(--white);
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 14px 24px; border-radius: var(--radius); transition: all var(--t-fast);
+}
+.auth-btn:hover { background: var(--accent-hov); }
+.auth-btn:disabled { opacity: 0.6; cursor: default; }
+.auth-success { display: flex; gap: 12px; align-items: flex-start; padding: 8px 0; }
+.auth-success p { font-family: var(--body); font-size: 14px; font-style: italic; color: var(--ink-mid); line-height: 1.7; margin: 0; }
+.auth-alt { font-family: var(--body); font-size: 13px; font-style: italic; color: var(--ink-muted); margin-top: 22px; }
+.auth-alt a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.auth-alt a:hover { color: var(--accent-hov); }
+
+/* ============================================================
+   DASHBOARD
+   ============================================================ */
+.dash { min-height: 100vh; background: var(--paper); }
+.dash-user { font-family: var(--mono); font-size: 10px; letter-spacing: 0.04em; color: var(--ink-muted); }
+.dash-main { display: flex; justify-content: center; padding: 64px 20px; }
+.dash-inner { width: 100%; max-width: 480px; }
+.dash-title { font-family: var(--serif); font-size: 32px; font-weight: 500; color: var(--ink); margin: 8px 0 24px; }
+.dash-welcome {
+  font-family: var(--body); font-size: 14px; font-style: italic; color: var(--accent);
+  background: var(--accent-lt); border: 1px solid var(--accent-bd); border-radius: var(--radius-md);
+  padding: 12px 16px; margin-bottom: 28px; line-height: 1.6;
+}
+.dash-card {
+  background: var(--white); border: var(--border); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card); padding: 28px;
+}
+.dash-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 12px 0; border-bottom: var(--border);
+}
+.dash-row:first-child { padding-top: 0; }
+.dash-key {
+  font-family: var(--mono); font-size: var(--label-size); letter-spacing: var(--label-letter);
+  text-transform: uppercase; color: var(--ink-muted);
+}
+.dash-val { font-family: var(--body); font-size: 14px; color: var(--ink); }
+.dash-badge {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: var(--radius-pill); border: 1px solid;
+}
+.dash-badge--ok    { color: var(--accent); background: var(--accent-lt); border-color: var(--accent-bd); }
+.dash-badge--warn  { color: var(--warn); background: var(--warn-lt); border-color: var(--warn-bd); }
+.dash-badge--muted { color: var(--ink-muted); background: var(--paper); border-color: var(--rule); }
+.dash-note {
+  font-family: var(--body); font-size: 13px; font-style: italic; color: var(--ink-mid);
+  line-height: 1.7; margin: 16px 0 0;
+}
+.dash-note--warn { color: var(--warn); }
+.dash-empty { font-family: var(--body); font-size: 14px; font-style: italic; color: var(--ink-mid); line-height: 1.7; margin: 0 0 20px; }
+.dash-card form, .dash-card > .plan-cta { margin-top: 24px; }
+.dash-card .plan-fine { margin-top: 12px; }
