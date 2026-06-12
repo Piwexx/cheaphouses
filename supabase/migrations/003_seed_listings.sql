@@ -2,42 +2,42 @@ insert into public.listings
   (id, country, flag, country_short, location, location_short, price, currency_symbol, title, meta, note, image, tone, is_new)
 values
   (
-    1, 'Portugal', '🇵🇹', 'Portugal', 'Alentejo · Portugal', 'Alentejo, Portugal',
-    '28.000', '€', 'Stone farmhouse with 3,800m² of land',
-    ARRAY['3 rooms', '140 m²', 'Fixer-upper'],
-    'The roof collapsed in the east wing in the 90s and was never fixed. **The rest of the structure is solid** — a local builder in Évora estimated €17–22K to make it livable. The land is 3,800m² with olive trees. No agent; contact the municipal office directly.',
+    1, 'USA', '🇺🇸', 'Tennessee', 'Unicoi County · Tennessee', 'Unicoi Co., TN',
+    '42,000', '$', 'Stone farmhouse on 3.8 acres, Appalachians',
+    ARRAY['3 rooms', '110 m²', 'Fixer-upper'],
+    'The east-wing floor joists are soft — a local contractor estimated $8–12K to fix. **The rest is genuinely solid**: 18-inch stone walls, dry basement, working spring-fed cistern. 40 minutes to Johnson City. No agent; the heirs want to split the proceeds before December.',
     'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=1400&q=80&fit=crop',
     'olive', true
   ),
   (
-    2, 'Italy', '🇮🇹', 'Italy', 'Calabria · Italy', 'Calabria, Italy',
-    '19.000', '€', '2-bedroom stone house, 11 years in probate',
-    ARRAY['2 rooms', '85 m²', 'Rewire needed'],
-    'Inherited by three siblings who could not agree on a sale price for a decade. **The probate is now resolved**; they want it gone before tax season. Habitable as-is but the wiring is from the 70s and would need a full pass. Shared wall both sides. Comune wants new residents.',
+    2, 'USA', '🇺🇸', 'Mississippi', 'Leflore County · Mississippi', 'Leflore Co., MS',
+    '18,000', '$', 'Shotgun house, one block from the square',
+    ARRAY['3 rooms', '90 m²', 'Rewire needed'],
+    'Three siblings inherited this from an aunt; wiring is original knob-and-tube and must go. **The structure is textbook shotgun**: straight through, no load-bearing interior walls, cheap to gut and redo. One block from the Greenwood square. Buyer needs to move before the city pulls the occupancy permit.',
     'https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=1400&q=80&fit=crop',
     'terracotta', true
   ),
   (
-    3, 'Germany', '🇩🇪', 'Germany', 'Mecklenburg · Germany', 'Mecklenburg, Germany',
-    '26.000', '€', 'Brick farmhouse on 1.2 hectares',
-    ARRAY['4 rooms', '180 m²', 'Agricultural'],
-    'Classified agricultural — a foreigner can buy it but converting to residential takes 18 months of municipal paperwork. **The building itself is in good shape**: new roof in 2018, dry inside, original parquet under the lino. Land has two outbuildings and an old apple orchard.',
+    3, 'USA', '🇺🇸', 'Iowa', 'Ringgold County · Iowa', 'Ringgold Co., IA',
+    '29,000', '$', 'Brick farmhouse on 1.5 acres, grain country',
+    ARRAY['4 rooms', '155 m²', 'New roof 2019'],
+    'Roof replaced 2019, furnace 2021, otherwise original 1940s. **Windows are the main issue** — original wood frames that rattle in a north wind. Ringgold County is the cheapest county in Iowa; 90 minutes to Des Moines. Seller is pricing to move, not to negotiate.',
     'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1400&q=80&fit=crop',
     'timber', false
   ),
   (
-    4, 'Spain', '🇪🇸', 'Spain', 'Galicia · Spain', 'Galicia, Spain',
-    '13.500', '€', 'Granite cottage, single-lane road access',
-    ARRAY['2 rooms', '80 m²', 'No mains gas'],
-    'The lowest-priced thing in this newsletter all year. **It is cheap for reasons:** no mains gas, no central heating, and a 4km single-lane road that floods in November. Roof is solid, walls are 60cm granite, dry inside. The previous owner cooked in the courtyard.',
+    4, 'USA', '🇺🇸', 'New Mexico', 'Mora County · New Mexico', 'Mora Co., NM',
+    '14,500', '$', 'Adobe house, two acres, high desert',
+    ARRAY['2 rooms', '85 m²', 'No central heat'],
+    'Lowest-priced thing in this newsletter in months. **Cheap for a reason**: no central heat, no mains water, composting outhouse. Adobe walls are 22 inches and in good shape. At 7,200ft the winters are serious. The nearest paved road is 4 miles. If that reads like a problem, skip it.',
     'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1400&q=80&fit=crop',
     'granite', false
   ),
   (
-    5, 'Japan', '🇯🇵', 'Japan', 'Hyogo Prefecture · Japan', 'Hyogo, Japan',
-    '3,200,000', '¥', 'Akiya farmhouse with rice field views',
-    ARRAY['5 rooms', '120 m²', 'Vacant home'],
-    '12 years empty. Structural inspection mandatory before any sale — budget ¥150K for it. **Tatami rooms need replacing** but the post-and-beam frame is original cedar and tight. The village has a relocation grant that can offset up to ¥2M of the work for residents under 40.',
+    5, 'USA', '🇺🇸', 'Arkansas', 'Newton County · Arkansas', 'Newton Co., AR',
+    '27,000', '$', 'Ozarks cabin with spring-fed creek',
+    ARRAY['3 rooms', '95 m²', 'Vacant home'],
+    'Left vacant five years when the owner moved to Springfield. **The spring-fed creek runs year-round and tested clean.** Foundation is solid concrete block. Roof has one soft spot over the porch addition; local estimate to fix: $2,500. 40 minutes to Harrison. No agent — contact the executor directly.',
     'https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=1400&q=80&fit=crop',
     'cedar', true
   ),
@@ -50,66 +50,66 @@ values
     'pine', false
   ),
   (
-    7, 'Canada', '🇨🇦', 'Nova Scotia', 'Nova Scotia · Canada', 'Nova Scotia, Canada',
-    '58,000', 'CA$', 'Century farmhouse, 4 acres of cleared land',
-    ARRAY['3 rooms', '110 m²', 'New roof 2022'],
-    'Roof was redone in 2022, oil furnace replaced 2020, otherwise original. **The well water tests clean**; the septic needs a pump-out and an inspection. Owners moved to Halifax and are firm at this price.',
+    7, 'USA', '🇺🇸', 'Maine', 'Aroostook County · Maine', 'Aroostook Co., ME',
+    '55,000', '$', 'Cape farmhouse on 4 acres, potato country',
+    ARRAY['3 rooms', '130 m²', 'Habitable'],
+    'New roof 2022, oil furnace 2021, otherwise 1940s original. **The well drilled in 2016 pumps clean.** Aroostook County is the most agricultural county east of the Mississippi; winters are serious and the closest hospital is 45 minutes. Owners moved to Portland and want a quick close.',
     'https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?w=1400&q=80&fit=crop',
     'pine', false
   ),
   (
-    8, 'Sweden', '🇸🇪', 'Sweden', 'Dalarna · Sweden', 'Dalarna, Sweden',
-    '43.000', '€', 'Red timber cottage near lake',
-    ARRAY['2 rooms', '70 m²', 'Falu red'],
-    'Falu-red panel exterior repainted three summers ago. **No central heating** — wood stove and electric panels. 600m to the lake, walking-distance to a station with a 90-min train to Stockholm. Habitable as-is for a summer house; an honest winter home would need insulation work.',
+    8, 'USA', '🇺🇸', 'Michigan', 'Alger County · Michigan', 'Alger Co., MI',
+    '39,000', '$', 'Lakeside camp, Upper Peninsula, 200ft of frontage',
+    ARRAY['2 rooms', '65 m²', 'Off-grid'],
+    'Off-grid, 200 feet of sandy frontage on a glacial lake. **The cabin is tight**: metal roof 2018, spray-foam insulation, good propane setup. No septic — composting toilet. Electric grid is 1.4 miles away; owners got a quote of $18K to connect. Priced for cash; no conventional financing in Alger County for this type.',
     'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1400&q=80&fit=crop',
     'terracotta', true
   ),
   (
-    9, 'Portugal', '🇵🇹', 'Portugal', 'Beira Baixa · Portugal', 'Beira Baixa, Portugal',
-    '47.500', '€', 'Village house with vineyard and well',
-    ARRAY['3 rooms', '120 m²', 'Habitable'],
-    'Habitable as-is, with a working well and 800m² of mature vineyard out back. **Kitchen was redone in 2021.** The catch is the village — fewer than 200 people, no school, the bakery closes for August. If isolation is the appeal, this is the listing.',
+    9, 'USA', '🇺🇸', 'West Virginia', 'Tucker County · West Virginia', 'Tucker Co., WV',
+    '52,000', '$', 'Timber-frame farmhouse at 3,400ft elevation',
+    ARRAY['3 rooms', '125 m²', 'Habitable'],
+    'Habitable as-is at 3,400ft. **Timber frame is post-1900 chestnut** — tight, dry, no rot. The summer is genuinely beautiful up here; winters close the road for 6–10 weeks. Spring is the only water source; a drilled well would add $9–14K. No agent; estate sale, priced to settle fast.',
     'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1400&q=80&fit=crop',
     'olive', false
   ),
   (
-    10, 'Italy', '🇮🇹', 'Italy', 'Sicily · Italy', 'Sicily, Italy',
-    '1', '€', 'One-euro townhouse, Mussomeli scheme',
-    ARRAY['4 rooms', '95 m²', 'Reno obligation'],
-    'The famous €1 program. **Real catch:** you must commit €25K of renovation within 3 years and post a €5K deposit. Building has a fresh roof (2022) but no plumbing on the upper floor. The municipality is genuinely helpful with paperwork.',
+    10, 'USA', '🇺🇸', 'Ohio', 'Meigs County · Ohio', 'Meigs Co., OH',
+    '22,000', '$', 'Brick Victorian, three floors, river town',
+    ARRAY['5 rooms', '180 m²', 'Light reno'],
+    'Three-story brick, original heart-pine floors mostly intact. **The catch is the plumbing**: cast-iron stack cracked in the basement, full replacement needed. Sitting 200 yards from the Ohio River; no flood history on the title but verify the county flood map. Light reno otherwise — paint, fixtures, one bathroom.',
     'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=1400&q=80&fit=crop',
     'terracotta', true
   ),
   (
-    11, 'France', '🇫🇷', 'France', 'Creuse · France', 'Creuse, France',
-    '36.000', '€', 'Stone longère with attached barn',
-    ARRAY['3 rooms', '110 m²', 'Habitable'],
-    'Longère typology — long single-storey stone with attached barn. **Habitable but spartan.** Septic was replaced 2019; roof is original slate and needs watching. 12 minutes from Guéret. The Creuse is the cheapest department in France and is depopulating; do your research on services.',
+    11, 'USA', '🇺🇸', 'Kentucky', 'Leslie County · Kentucky', 'Leslie Co., KY',
+    '31,000', '$', 'Stone hollow homestead, 1.8 acres',
+    ARRAY['3 rooms', '100 m²', 'Habitable'],
+    'Hollow homestead — spring house, smokehouse, and main structure all on 1.8 acres. **Main house is habitable**: oil furnace 2019, metal roof 2016. The catch is access: paved road ends 0.7 miles out, seasonal road only from there. If that is a feature and not a bug, this is the listing.',
     'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=1400&q=80&fit=crop',
     'granite', false
   ),
   (
-    12, 'Spain', '🇪🇸', 'Spain', 'Aragon · Spain', 'Aragon, Spain',
-    '24.000', '€', 'Adobe village house, three floors',
-    ARRAY['5 rooms', '160 m²', 'Light reno'],
-    'Three floors plus attic, all habitable. **Adobe construction — thick walls, cool in summer.** The catch is the village population (94) and the 40-minute drive to a proper supermarket. Seller is the daughter of the previous owner; she lives in Zaragoza and wants a quick close.',
+    12, 'USA', '🇺🇸', 'New York', 'Delaware County · New York', 'Delaware Co., NY',
+    '26,500', '$', 'Village house, three floors, Catskills',
+    ARRAY['5 rooms', '160 m²', 'Cosmetic'],
+    'Daughter of the previous owner lives in Brooklyn and wants this gone. **Three floors, original wide-plank pine on the second level**, plaster walls throughout. Cosmetic work: paint, some plaster, kitchen update. Walking distance to the village center. No cellar; full crawl space.',
     'https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=1400&q=80&fit=crop',
     'terracotta', false
   ),
   (
-    13, 'Japan', '🇯🇵', 'Japan', 'Tokushima Prefecture · Japan', 'Tokushima, Japan',
-    '2,800,000', '¥', 'Mountain akiya on terraced land',
-    ARRAY['4 rooms', '95 m²', 'Akiya bank'],
-    'Listed through the prefectural akiya bank; the owner left a decade ago. **Inspection mandatory** — budget ¥180K. Terraced land is 1,400m², mostly bamboo now. The local relocation office helps with paperwork and translation if you commit to two years of residency.',
+    13, 'USA', '🇺🇸', 'Minnesota', 'Lake of the Woods County · Minnesota', 'Lake of the Woods, MN',
+    '33,000', '$', 'Northwoods cabin, 100ft lake frontage',
+    ARRAY['2 rooms', '55 m²', 'Off-grid'],
+    'Left unused for 8 years; title is clear. **100 feet of sandy frontage, direct lake access**, state forest behind. Composting toilet, propane everything. Road closes for 10 weeks in winter. Inspection by a certified inspector with northwoods experience is strongly recommended before committing.',
     'https://images.unsplash.com/photo-1542640244-7e672d6cef4e?w=1400&q=80&fit=crop',
     'cedar', false
   ),
   (
-    14, 'Germany', '🇩🇪', 'Germany', 'Saxony-Anhalt · Germany', 'Saxony-Anhalt, Germany',
-    '55.000', '€', 'Half-timbered townhouse, three floors',
-    ARRAY['6 rooms', '195 m²', 'Listed'],
-    'Plumbing and wiring are 1970s and need replacing. **Roof tiles last redone 2014.** Listed building — facade changes need municipal approval but the town actively helps with restoration grants. Walking-distance to the train station and a Lidl.',
+    14, 'USA', '🇺🇸', 'Pennsylvania', 'Bedford County · Pennsylvania', 'Bedford Co., PA',
+    '49,000', '$', 'Fieldstone house, two floors, 0.8 acres',
+    ARRAY['4 rooms', '145 m²', 'New roof 2021'],
+    'Fieldstone from the original farm, circa 1870. **New roof 2021, oil furnace 2020.** Plumbing is 1960s copper — functional but aging. Listed in the county historic registry; facade changes need municipal approval, but restoration grants are available. Two-hour drive to Pittsburgh.',
     'https://images.unsplash.com/photo-1582160683329-9bf8a9c7c9c1?w=1400&q=80&fit=crop',
     'timber', false
   ),
@@ -122,11 +122,24 @@ values
     'pine', true
   ),
   (
-    16, 'Canada', '🇨🇦', 'New Brunswick', 'New Brunswick · Canada', 'New Brunswick, Canada',
-    '72,000', 'CA$', 'Cedar-shingle home on 8 acres',
-    ARRAY['4 rooms', '140 m²', 'Move-in'],
-    'Move-in ready. **Cedar shingles redone 2020, drilled well 2018, new propane furnace 2023.** 8 acres of mixed woodland, mostly maple and birch. 25 minutes to Fredericton. Owners are downsizing and motivated; this one will move.',
+    16, 'USA', '🇺🇸', 'Montana', 'Phillips County · Montana', 'Phillips Co., MT',
+    '68,000', '$', 'Ranch cabin on 8 acres, Hi-Line',
+    ARRAY['3 rooms', '120 m²', 'Move-in'],
+    'Move-in ready — the only listing this week that qualifies. **Drilled well 2019, propane furnace 2022, cedar shingles redone 2021.** 8 acres of shortgrass prairie with a creek easement. Phillips County is a 3-hour drive from Great Falls; if that is what you want, everything here works. Owners are downsizing and motivated.',
     'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=1400&q=80&fit=crop',
     'pine', true
   )
-on conflict (id) do nothing;
+on conflict (id) do update set
+  country = excluded.country,
+  flag = excluded.flag,
+  country_short = excluded.country_short,
+  location = excluded.location,
+  location_short = excluded.location_short,
+  price = excluded.price,
+  currency_symbol = excluded.currency_symbol,
+  title = excluded.title,
+  meta = excluded.meta,
+  note = excluded.note,
+  image = excluded.image,
+  tone = excluded.tone,
+  is_new = excluded.is_new;

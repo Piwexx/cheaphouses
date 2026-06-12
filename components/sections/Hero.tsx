@@ -1,4 +1,4 @@
-import { COUNTRIES, HERO_HEADLINES } from '@/lib/data'
+import { HERO_HEADLINES } from '@/lib/data'
 import SignupForm from '@/components/forms/SignupForm'
 import type { HeadlineVariant } from '@/types'
 
@@ -32,13 +32,6 @@ export default function Hero({ headlineVariant = 'classic' }: HeroProps) {
           </p>
         </div>
 
-        <div className="country-display" role="list" aria-label="Countries covered">
-          {COUNTRIES.map((c, i) => (
-            <span key={i} className="country-tag" role="listitem">
-              {c.flag} {c.name}
-            </span>
-          ))}
-        </div>
       </div>
     </section>
   )

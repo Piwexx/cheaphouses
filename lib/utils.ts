@@ -1,14 +1,9 @@
 import { createElement, Fragment } from 'react'
 import type { ReactNode } from 'react'
 import type { Listing, AugmentedListing, FilterValues, SortOption } from '@/types'
-import { COUNTRY_CODE } from '@/lib/data'
 
-export function formatPrice(raw: string, sym: string): string {
+export function formatPrice(raw: string): string {
   const num = parseInt(raw.replace(/[.,\s]/g, ''), 10)
-  if (sym === '¥' && num >= 1_000_000) {
-    const m = num / 1_000_000
-    return (m % 1 === 0 ? m.toFixed(0) : m.toFixed(1)) + 'M'
-  }
   return num.toLocaleString('en-US')
 }
 
@@ -23,13 +18,7 @@ export function emph(text: string): ReactNode[] {
 
 export function augmentListings(listings: Listing[]): AugmentedListing[] {
   return listings.map(l => {
-    let p: number
-    if (l.currencySymbol === '¥')
-      p = Math.round(parseFloat(l.price.replace(/[^0-9]/g, '')) / 150)
-    else if (l.currencySymbol === 'CA$')
-      p = Math.round(parseFloat(l.price.replace(/[^0-9]/g, '')) / 1.35)
-    else
-      p = parseInt(l.price.replace(/[.,]/g, '').replace(/[^0-9]/g, ''), 10) || 0
+    const p = parseInt(l.price.replace(/[.,]/g, '').replace(/[^0-9]/g, ''), 10) || 0
 
     const meta = l.meta.join(' ').toLowerCase()
     let _cond: AugmentedListing['_cond'] = 'partial'
@@ -39,11 +28,10 @@ export function augmentListings(listings: Listing[]): AugmentedListing[] {
 
     const t = l.title.toLowerCase()
     let _type: AugmentedListing['_type'] = 'village'
-    if (t.includes('akiya') || t.includes('kominka') || t.includes('minka')) _type = 'akiya'
-    else if (t.includes('farmhouse') || t.includes('quinta') || t.includes('longère') || t.includes('bungalow')) _type = 'farmhouse'
-    else if (t.includes('cottage') || t.includes('cabin')) _type = 'cottage'
+    if (t.includes('farmhouse') || t.includes('bungalow')) _type = 'farmhouse'
+    else if (t.includes('cottage') || t.includes('cabin') || t.includes('camp')) _type = 'cottage'
 
-    return { ...l, _p: p, _cc: COUNTRY_CODE[l.country] || 'xx', _cond, _type }
+    return { ...l, _p: p, _cond, _type }
   })
 }
 
@@ -66,7 +54,6 @@ export function filterListings(
   }
 
   const list = all.filter(l =>
-    (filters.country === 'all' || l._cc === filters.country) &&
     matchPrice(l._p, filters.price) &&
     (filters.type === 'all' || l._type === filters.type) &&
     matchCond(l._cond, filters.condition)

@@ -50,7 +50,7 @@ export default function Pricing() {
             <ul className="plan-features">
               <li><CheckIcon /><span>8 properties per issue</span></li>
               <li><CheckIcon /><span>Curator&apos;s note on every listing</span></li>
-              <li><CheckIcon /><span>8 countries covered</span></li>
+              <li><CheckIcon /><span>All 50 states covered</span></li>
               <li><CheckIcon /><span>Delivered every Friday</span></li>
             </ul>
             <a href="#signup" className="plan-cta plan-cta--outline">

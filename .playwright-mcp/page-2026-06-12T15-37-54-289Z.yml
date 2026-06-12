@@ -1,0 +1,539 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Cheap Houses" [ref=e4] [cursor=pointer]:
+        - /url: "#top"
+      - navigation [ref=e5]:
+        - link "View listings" [ref=e6] [cursor=pointer]:
+          - /url: "#preview"
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - link "TikTok" [ref=e9] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e10]
+          - link "Instagram" [ref=e12] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e13]
+        - link "Log in" [ref=e16] [cursor=pointer]:
+          - /url: "#"
+        - link "Become a member" [ref=e17] [cursor=pointer]:
+          - /url: "#pricing"
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - heading "Underpriced properties, found and curated across the USA." [level=1] [ref=e21]:
+        - text: Underpriced properties,
+        - emphasis [ref=e22]: found and curated
+        - text: across the USA.
+      - paragraph [ref=e23]: One curator. Every listing reviewed by hand. No algorithm. No agent fees. No listings that hide the problems.
+      - generic [ref=e24]:
+        - generic [ref=e26]:
+          - textbox "Email address" [ref=e28]:
+            - /placeholder: your@email.com
+          - button "Get Friday's picks" [ref=e29] [cursor=pointer]
+        - paragraph [ref=e30]: Fridays · Free forever · 8,400 readers · Unsubscribe in one click
+    - generic [ref=e32]:
+      - generic [ref=e33]: Recent picks
+      - generic [ref=e35]:
+        - listitem [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]:
+              - generic [ref=e39]: Asking price
+              - generic [ref=e40]: $42,000
+            - generic [ref=e41]: Tennessee
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: Unicoi County · Tennessee
+            - heading "Stone farmhouse on 3.8 acres, Appalachians" [level=3] [ref=e44]
+            - generic [ref=e45]:
+              - generic [ref=e46]: 3 rooms
+              - generic [ref=e47]: 110 m²
+              - generic [ref=e48]: Fixer-upper
+            - generic [ref=e49]: Curator's note
+            - paragraph [ref=e50]:
+              - text: The east-wing floor joists are soft — a local contractor estimated $8–12K to fix.
+              - strong [ref=e51]: The rest is genuinely solid
+              - text: ": 18-inch stone walls, dry basement, working spring-fed cistern. 40 minutes to Johnson City. No agent; the heirs want to split the proceeds before December."
+            - button "Read more" [ref=e52] [cursor=pointer]
+        - listitem [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e55]:
+              - generic [ref=e56]: Asking price
+              - generic [ref=e57]: $18,000
+            - generic [ref=e58]: Mississippi
+          - generic [ref=e59]:
+            - paragraph [ref=e60]: Leflore County · Mississippi
+            - heading "Shotgun house, one block from the square" [level=3] [ref=e61]
+            - generic [ref=e62]:
+              - generic [ref=e63]: 3 rooms
+              - generic [ref=e64]: 90 m²
+              - generic [ref=e65]: Rewire needed
+            - generic [ref=e66]: Curator's note
+            - paragraph [ref=e67]:
+              - text: Three siblings inherited this from an aunt; wiring is original knob-and-tube and must go.
+              - strong [ref=e68]: The structure is textbook shotgun
+              - text: ": straight through, no load-bearing interior walls, cheap to gut and redo. One block from the Greenwood square. Buyer needs to move before the city pulls the occupancy permit."
+            - button "Read more" [ref=e69] [cursor=pointer]
+        - listitem [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]: Asking price
+              - generic [ref=e74]: $29,000
+            - generic [ref=e75]: Iowa
+          - generic [ref=e76]:
+            - paragraph [ref=e77]: Ringgold County · Iowa
+            - heading "Brick farmhouse on 1.5 acres, grain country" [level=3] [ref=e78]
+            - generic [ref=e79]:
+              - generic [ref=e80]: 4 rooms
+              - generic [ref=e81]: 155 m²
+              - generic [ref=e82]: New roof 2019
+            - generic [ref=e83]: Curator's note
+            - paragraph [ref=e84]:
+              - text: Roof replaced 2019, furnace 2021, otherwise original 1940s.
+              - strong [ref=e85]: Windows are the main issue
+              - text: — original wood frames that rattle in a north wind. Ringgold County is the cheapest county in Iowa; 90 minutes to Des Moines. Seller is pricing to move, not to negotiate.
+            - button "Read more" [ref=e86] [cursor=pointer]
+        - listitem [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: Asking price
+              - generic [ref=e91]: $14,500
+            - generic [ref=e92]: New Mexico
+          - generic [ref=e93]:
+            - paragraph [ref=e94]: Mora County · New Mexico
+            - heading "Adobe house, two acres, high desert" [level=3] [ref=e95]
+            - generic [ref=e96]:
+              - generic [ref=e97]: 2 rooms
+              - generic [ref=e98]: 85 m²
+              - generic [ref=e99]: No central heat
+            - generic [ref=e100]: Curator's note
+            - paragraph [ref=e101]:
+              - text: Lowest-priced thing in this newsletter in months.
+              - strong [ref=e102]: Cheap for a reason
+              - text: ": no central heat, no mains water, composting outhouse. Adobe walls are 22 inches and in good shape. At 7,200ft the winters are serious. The nearest paved road is 4 miles. If that reads like a problem, skip it."
+            - button "Read more" [ref=e103] [cursor=pointer]
+        - listitem [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]: Asking price
+              - generic [ref=e108]: $27,000
+            - generic [ref=e109]: Arkansas
+          - generic [ref=e110]:
+            - paragraph [ref=e111]: Newton County · Arkansas
+            - heading "Ozarks cabin with spring-fed creek" [level=3] [ref=e112]
+            - generic [ref=e113]:
+              - generic [ref=e114]: 3 rooms
+              - generic [ref=e115]: 95 m²
+              - generic [ref=e116]: Vacant home
+            - generic [ref=e117]: Curator's note
+            - paragraph [ref=e118]:
+              - text: Left vacant five years when the owner moved to Springfield.
+              - strong [ref=e119]: The spring-fed creek runs year-round and tested clean.
+              - text: "Foundation is solid concrete block. Roof has one soft spot over the porch addition; local estimate to fix: $2,500. 40 minutes to Harrison. No agent — contact the executor directly."
+            - button "Read more" [ref=e120] [cursor=pointer]
+        - listitem [ref=e121]:
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - generic [ref=e124]: Asking price
+              - generic [ref=e125]: $35,000
+            - generic [ref=e126]: West Virginia
+          - generic [ref=e127]:
+            - paragraph [ref=e128]: Pocahontas County · West Virginia
+            - heading "Mountain bungalow on 1.2 acres" [level=3] [ref=e129]
+            - generic [ref=e130]:
+              - generic [ref=e131]: 2 rooms
+              - generic [ref=e132]: 85 m²
+              - generic [ref=e133]: Cosmetic
+            - generic [ref=e134]: Curator's note
+            - paragraph [ref=e135]:
+              - text: Estate sale. Cosmetic work only — floors, paint, one window.
+              - strong [ref=e136]: Septic was redone in 2019.
+              - text: 35 minutes to the nearest grocery; an hour to a hospital. If you want quiet, this is quiet. If you want delivery, this is not the listing for you.
+            - button "Read more" [ref=e137] [cursor=pointer]
+      - generic [ref=e138]:
+        - generic [ref=e139]: 1 / 6
+        - tablist "Carousel pages" [ref=e140]:
+          - button "Go to pick 1" [ref=e141] [cursor=pointer]
+          - button "Go to pick 2" [ref=e142] [cursor=pointer]
+          - button "Go to pick 3" [ref=e143] [cursor=pointer]
+          - button "Go to pick 4" [ref=e144] [cursor=pointer]
+          - button "Go to pick 5" [ref=e145] [cursor=pointer]
+          - button "Go to pick 6" [ref=e146] [cursor=pointer]
+        - generic [ref=e147]:
+          - button "Previous pick" [disabled] [ref=e148]:
+            - img [ref=e149]
+          - button "Next pick" [ref=e151] [cursor=pointer]:
+            - img [ref=e152]
+    - generic [ref=e155]:
+      - generic [ref=e157]:
+        - heading "From this month's shortlist" [level=2] [ref=e158]:
+          - text: From this month's
+          - emphasis [ref=e159]: shortlist
+        - paragraph [ref=e160]: 16 of 200+ properties reviewed
+      - generic [ref=e161]:
+        - button "Filters" [ref=e162] [cursor=pointer]:
+          - img [ref=e163]
+          - text: Filters
+        - generic [ref=e164]:
+          - generic [ref=e165]: Sort
+          - combobox "Sort" [ref=e166] [cursor=pointer]:
+            - option "Newest first" [selected]
+            - 'option "Price: low to high"'
+            - 'option "Price: high to low"'
+      - generic [ref=e167]:
+        - link "Stone farmhouse on 3.8 acres, Appalachians in Unicoi Co., TN" [ref=e168] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e169]:
+            - generic [ref=e170]: Unicoi Co., TN
+            - generic [ref=e171]: New
+          - generic [ref=e172]:
+            - generic [ref=e173]: $42,000
+            - generic [ref=e174]: Unicoi Co., TN
+            - generic [ref=e175]: Stone farmhouse on 3.8 acres, Appalachians
+            - generic [ref=e176]:
+              - generic [ref=e177]: 3 rooms
+              - generic [ref=e178]: 110 m²
+              - generic [ref=e179]: Fixer-upper
+        - link "Shotgun house, one block from the square in Leflore Co., MS" [ref=e180] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e181]:
+            - generic [ref=e182]: Leflore Co., MS
+            - generic [ref=e183]: New
+          - generic [ref=e184]:
+            - generic [ref=e185]: $18,000
+            - generic [ref=e186]: Leflore Co., MS
+            - generic [ref=e187]: Shotgun house, one block from the square
+            - generic [ref=e188]:
+              - generic [ref=e189]: 3 rooms
+              - generic [ref=e190]: 90 m²
+              - generic [ref=e191]: Rewire needed
+        - link "Ozarks cabin with spring-fed creek in Newton Co., AR" [ref=e192] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e193]:
+            - generic [ref=e194]: Newton Co., AR
+            - generic [ref=e195]: New
+          - generic [ref=e196]:
+            - generic [ref=e197]: $27,000
+            - generic [ref=e198]: Newton Co., AR
+            - generic [ref=e199]: Ozarks cabin with spring-fed creek
+            - generic [ref=e200]:
+              - generic [ref=e201]: 3 rooms
+              - generic [ref=e202]: 95 m²
+              - generic [ref=e203]: Vacant home
+        - link "Lakeside camp, Upper Peninsula, 200ft of frontage in Alger Co., MI" [ref=e204] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e205]:
+            - generic [ref=e206]: Alger Co., MI
+            - generic [ref=e207]: New
+          - generic [ref=e208]:
+            - generic [ref=e209]: $39,000
+            - generic [ref=e210]: Alger Co., MI
+            - generic [ref=e211]: Lakeside camp, Upper Peninsula, 200ft of frontage
+            - generic [ref=e212]:
+              - generic [ref=e213]: 2 rooms
+              - generic [ref=e214]: 65 m²
+              - generic [ref=e215]: Off-grid
+        - link "Brick Victorian, three floors, river town in Meigs Co., OH" [ref=e216] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e217]:
+            - generic [ref=e218]: Meigs Co., OH
+            - generic [ref=e219]: New
+          - generic [ref=e220]:
+            - generic [ref=e221]: $22,000
+            - generic [ref=e222]: Meigs Co., OH
+            - generic [ref=e223]: Brick Victorian, three floors, river town
+            - generic [ref=e224]:
+              - generic [ref=e225]: 5 rooms
+              - generic [ref=e226]: 180 m²
+              - generic [ref=e227]: Light reno
+        - link "Hunting cabin on 6 wooded acres in NEK, Vermont" [ref=e228] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e229]:
+            - generic [ref=e230]: NEK, Vermont
+            - generic [ref=e231]: New
+          - generic [ref=e232]:
+            - generic [ref=e233]: $48,000
+            - generic [ref=e234]: NEK, Vermont
+            - generic [ref=e235]: Hunting cabin on 6 wooded acres
+            - generic [ref=e236]:
+              - generic [ref=e237]: 1 room
+              - generic [ref=e238]: 40 m²
+              - generic [ref=e239]: Off-grid
+        - link "Ranch cabin on 8 acres, Hi-Line in Phillips Co., MT" [ref=e240] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e241]:
+            - generic [ref=e242]: Phillips Co., MT
+            - generic [ref=e243]: New
+          - generic [ref=e244]:
+            - generic [ref=e245]: $68,000
+            - generic [ref=e246]: Phillips Co., MT
+            - generic [ref=e247]: Ranch cabin on 8 acres, Hi-Line
+            - generic [ref=e248]:
+              - generic [ref=e249]: 3 rooms
+              - generic [ref=e250]: 120 m²
+              - generic [ref=e251]: Move-in
+        - link "Brick farmhouse on 1.5 acres, grain country in Ringgold Co., IA" [ref=e252] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e254]: Ringgold Co., IA
+          - generic [ref=e255]:
+            - generic [ref=e256]: $29,000
+            - generic [ref=e257]: Ringgold Co., IA
+            - generic [ref=e258]: Brick farmhouse on 1.5 acres, grain country
+            - generic [ref=e259]:
+              - generic [ref=e260]: 4 rooms
+              - generic [ref=e261]: 155 m²
+              - generic [ref=e262]: New roof 2019
+        - link "Adobe house, two acres, high desert in Mora Co., NM" [ref=e263] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e265]: Mora Co., NM
+          - generic [ref=e266]:
+            - generic [ref=e267]: $14,500
+            - generic [ref=e268]: Mora Co., NM
+            - generic [ref=e269]: Adobe house, two acres, high desert
+            - generic [ref=e270]:
+              - generic [ref=e271]: 2 rooms
+              - generic [ref=e272]: 85 m²
+              - generic [ref=e273]: No central heat
+        - link "Mountain bungalow on 1.2 acres in Pocahontas Co., WV" [ref=e274] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e276]: Pocahontas Co., WV
+          - generic [ref=e277]:
+            - generic [ref=e278]: $35,000
+            - generic [ref=e279]: Pocahontas Co., WV
+            - generic [ref=e280]: Mountain bungalow on 1.2 acres
+            - generic [ref=e281]:
+              - generic [ref=e282]: 2 rooms
+              - generic [ref=e283]: 85 m²
+              - generic [ref=e284]: Cosmetic
+        - link "Cape farmhouse on 4 acres, potato country in Aroostook Co., ME" [ref=e285] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e287]: Aroostook Co., ME
+          - generic [ref=e288]:
+            - generic [ref=e289]: $55,000
+            - generic [ref=e290]: Aroostook Co., ME
+            - generic [ref=e291]: Cape farmhouse on 4 acres, potato country
+            - generic [ref=e292]:
+              - generic [ref=e293]: 3 rooms
+              - generic [ref=e294]: 130 m²
+              - generic [ref=e295]: Habitable
+        - link "Timber-frame farmhouse at 3,400ft elevation in Tucker Co., WV" [ref=e296] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e298]: Tucker Co., WV
+          - generic [ref=e299]:
+            - generic [ref=e300]: $52,000
+            - generic [ref=e301]: Tucker Co., WV
+            - generic [ref=e302]: Timber-frame farmhouse at 3,400ft elevation
+            - generic [ref=e303]:
+              - generic [ref=e304]: 3 rooms
+              - generic [ref=e305]: 125 m²
+              - generic [ref=e306]: Habitable
+        - link "Stone hollow homestead, 1.8 acres in Leslie Co., KY" [ref=e307] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e309]: Leslie Co., KY
+          - generic [ref=e310]:
+            - generic [ref=e311]: $31,000
+            - generic [ref=e312]: Leslie Co., KY
+            - generic [ref=e313]: Stone hollow homestead, 1.8 acres
+            - generic [ref=e314]:
+              - generic [ref=e315]: 3 rooms
+              - generic [ref=e316]: 100 m²
+              - generic [ref=e317]: Habitable
+        - link "Village house, three floors, Catskills in Delaware Co., NY" [ref=e318] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e320]: Delaware Co., NY
+          - generic [ref=e321]:
+            - generic [ref=e322]: $26,500
+            - generic [ref=e323]: Delaware Co., NY
+            - generic [ref=e324]: Village house, three floors, Catskills
+            - generic [ref=e325]:
+              - generic [ref=e326]: 5 rooms
+              - generic [ref=e327]: 160 m²
+              - generic [ref=e328]: Cosmetic
+        - link "Northwoods cabin, 100ft lake frontage in Lake of the Woods, MN" [ref=e329] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e331]: Lake of the Woods, MN
+          - generic [ref=e332]:
+            - generic [ref=e333]: $33,000
+            - generic [ref=e334]: Lake of the Woods, MN
+            - generic [ref=e335]: Northwoods cabin, 100ft lake frontage
+            - generic [ref=e336]:
+              - generic [ref=e337]: 2 rooms
+              - generic [ref=e338]: 55 m²
+              - generic [ref=e339]: Off-grid
+        - link "Fieldstone house, two floors, 0.8 acres in Bedford Co., PA" [ref=e340] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e342]: Bedford Co., PA
+          - generic [ref=e343]:
+            - generic [ref=e344]: $49,000
+            - generic [ref=e345]: Bedford Co., PA
+            - generic [ref=e346]: Fieldstone house, two floors, 0.8 acres
+            - generic [ref=e347]:
+              - generic [ref=e348]: 4 rooms
+              - generic [ref=e349]: 145 m²
+              - generic [ref=e350]: New roof 2021
+    - generic [ref=e352]:
+      - heading "What you get in your inbox" [level=2] [ref=e353]:
+        - text: What you get in your
+        - emphasis [ref=e354]: inbox
+      - generic [ref=e355]:
+        - generic [ref=e356]:
+          - generic [ref=e357]: "01"
+          - img [ref=e359]
+          - generic [ref=e362]: We scout, every day
+          - paragraph [ref=e363]: Estate sales, municipal auctions, inheritance disputes, motivated sellers who never made it onto Idealista or Rightmove. 200+ candidates pass through the queue each week.
+        - generic [ref=e364]:
+          - generic [ref=e365]: "02"
+          - img [ref=e367]
+          - generic [ref=e370]: We name the catch
+          - paragraph [ref=e371]: Every property gets a hand-written note. Roof, plumbing, legal status, neighbours, distance to a real grocery. We tell you what'll cost money before you fly out.
+        - generic [ref=e372]:
+          - generic [ref=e373]: "03"
+          - img [ref=e375]
+          - generic [ref=e378]: You read it Friday
+          - paragraph [ref=e379]: One email. Eight properties. Direct contact details for sellers or municipal offices. No paywall, no upsell, no algorithm picking what you see.
+    - generic [ref=e381]:
+      - generic [ref=e382]: M
+      - generic [ref=e383]:
+        - generic [ref=e384]:
+          - generic [ref=e385]: Marcus Holt
+          - generic [ref=e386]: · Founder & curator
+        - paragraph [ref=e387]: I'm a writer and property researcher who spent three years hunting for underpriced land across the rural USA. That experience — full of dead ends, estate sales, and hidden gems — became the reason this newsletter exists. I now track underpriced real estate full-time across the country and share only what I'd buy myself.
+        - generic [ref=e388]:
+          - link "Read the about page" [ref=e389] [cursor=pointer]:
+            - /url: "#"
+          - link "Email Marcus directly" [ref=e390] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=e392]:
+      - generic [ref=e393]: Membership
+      - generic [ref=e394]:
+        - heading "Two ways to read Cheap Houses" [level=2] [ref=e395]:
+          - text: Two ways to read
+          - emphasis [ref=e396]: Cheap Houses
+        - paragraph [ref=e397]: The newsletter is free, forever. Membership unlocks the full archive, direct seller contacts, and country search.
+        - generic [ref=e398]:
+          - button "Monthly" [ref=e399] [cursor=pointer]
+          - button "Annual Save 33%" [ref=e400] [cursor=pointer]:
+            - text: Annual
+            - generic [ref=e401]: Save 33%
+      - generic [ref=e402]:
+        - generic [ref=e403]:
+          - generic [ref=e404]: Free
+          - generic [ref=e405]:
+            - generic [ref=e406]: Free
+            - generic [ref=e407]: / forever
+          - paragraph [ref=e408]: Eight hand-picked properties every Friday. No credit card, no catch.
+          - list [ref=e410]:
+            - listitem [ref=e411]:
+              - img [ref=e412]
+              - generic [ref=e414]: 8 properties per issue
+            - listitem [ref=e415]:
+              - img [ref=e416]
+              - generic [ref=e418]: Curator's note on every listing
+            - listitem [ref=e419]:
+              - img [ref=e420]
+              - generic [ref=e422]: All 50 states covered
+            - listitem [ref=e423]:
+              - img [ref=e424]
+              - generic [ref=e426]: Delivered every Friday
+          - link "Get the free newsletter" [ref=e427] [cursor=pointer]:
+            - /url: "#signup"
+        - generic [ref=e428]:
+          - generic [ref=e429]: Member
+          - generic [ref=e430]:
+            - generic [ref=e431]: $10
+            - generic [ref=e432]: / month, billed annually
+          - paragraph [ref=e433]: The complete picture. Every property we find, the contacts you need to act on it — no agents, no waiting.
+          - list [ref=e435]:
+            - listitem [ref=e436]:
+              - img [ref=e437]
+              - generic [ref=e439]: 20+ properties per issue, full archive
+            - listitem [ref=e440]:
+              - img [ref=e441]
+              - generic [ref=e443]: Direct seller & municipal contacts
+            - listitem [ref=e444]:
+              - img [ref=e445]
+              - generic [ref=e447]: Search by country, budget & condition
+          - link "Become a member" [ref=e448] [cursor=pointer]:
+            - /url: "#"
+          - paragraph [ref=e449]: Cancel any time · No lock-in
+    - generic [ref=e451]:
+      - generic [ref=e452]: Stay in the loop
+      - heading "Get underpriced properties in your inbox." [level=2] [ref=e453]:
+        - text: Get underpriced properties
+        - text: in your
+        - emphasis [ref=e454]: inbox.
+      - paragraph [ref=e455]: Fridays. Eight properties, hand-checked, with the catch named before you click. No spam, no agent emails, unsubscribe in one click.
+      - generic [ref=e458]:
+        - textbox "Email address" [ref=e460]:
+          - /placeholder: your@email.com
+        - button "Get Friday's picks" [ref=e461] [cursor=pointer]
+    - generic [ref=e463]:
+      - heading "Frequently asked questions" [level=2] [ref=e464]
+      - generic [ref=e465]:
+        - button "What is Cheap Houses?" [ref=e466] [cursor=pointer]:
+          - generic [ref=e467]: What is Cheap Houses?
+          - img [ref=e469]
+        - paragraph [ref=e471]: A curated selection of underpriced properties from across the USA. We review 200+ listings every week and publish only the ones worth a second look — with direct seller contact info and renovation estimates where available.
+      - generic [ref=e472]:
+        - button "What states do you cover?" [ref=e473] [cursor=pointer]:
+          - generic [ref=e474]: What states do you cover?
+          - img [ref=e476]
+        - paragraph [ref=e478]: All 50 states. We focus on rural and small-town properties across every region — Appalachia, the Deep South, the Great Plains, the Midwest, New England, and the Mountain West. More listings are added every Friday.
+      - generic [ref=e479]:
+        - button "What's the price ceiling?" [ref=e480] [cursor=pointer]:
+          - generic [ref=e481]: What's the price ceiling?
+          - img [ref=e483]
+        - paragraph [ref=e485]: $199K is the hard ceiling. Most listings are well below that — often under $50K. The point is finding properties that are genuinely underpriced relative to their condition, location, or potential.
+      - generic [ref=e486]:
+        - button "Why are these properties so cheap?" [ref=e487] [cursor=pointer]:
+          - generic [ref=e488]: Why are these properties so cheap?
+          - img [ref=e490]
+        - paragraph [ref=e492]: "Different reasons every time — and we always explain which one. Common reasons: location (rural, remote), condition (needs work, rewiring), legal complexity (probate, agricultural classification), or a motivated seller who wants to close fast. The catch is always in the note."
+      - generic [ref=e493]:
+        - button "Is it free?" [ref=e494] [cursor=pointer]:
+          - generic [ref=e495]: Is it free?
+          - img [ref=e497]
+        - paragraph [ref=e499]: Browsing is free — you can see listings and prices. Full access, including direct seller contacts, renovation estimates, and the complete archive, requires a Membership. $10/month billed annually, or $15/month month-to-month.
+      - generic [ref=e500]:
+        - button "What does membership include exactly?" [ref=e501] [cursor=pointer]:
+          - generic [ref=e502]: What does membership include exactly?
+          - img [ref=e504]
+        - paragraph [ref=e506]: Full access to every listing in the archive, direct seller and municipal contact info, renovation estimates where available, and search by state, budget, and condition. No ads, no agents, no commission. Cancel anytime.
+      - generic [ref=e507]:
+        - button "How do I cancel?" [ref=e508] [cursor=pointer]:
+          - generic [ref=e509]: How do I cancel?
+          - img [ref=e511]
+        - paragraph [ref=e513]:
+          - text: One click in your account settings. No retention flow, no confirmation screen, no guilt-trip. Cancel anytime and you keep access until the end of your billing period.
+          - link "Go to account →" [ref=e514] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e515]:
+        - button "Can foreigners buy property in the USA?" [ref=e516] [cursor=pointer]:
+          - generic [ref=e517]: Can foreigners buy property in the USA?
+          - img [ref=e519]
+        - paragraph [ref=e521]: "Yes. The US has no restriction on foreign property ownership. The process is straightforward: you can close in 30–60 days, financing is available for foreign buyers (though at higher rates and stricter requirements), and title insurance protects the purchase. An LLC structure is common for tax and liability reasons."
+      - generic [ref=e522]:
+        - button "How much does it really cost to buy?" [ref=e523] [cursor=pointer]:
+          - generic [ref=e524]: How much does it really cost to buy?
+          - img [ref=e526]
+        - paragraph [ref=e528]: "The asking price is only part of it. US closings add 2–5% in transaction costs: title insurance, recording fees, transfer taxes (varies by state). For rural and distressed properties, budget separately for a general inspection ($300–600), well/septic inspection if applicable ($200–400), and title search. On a $30K property, total acquisition overhead is typically $2–5K."
+  - contentinfo [ref=e529]:
+    - generic [ref=e530]:
+      - generic [ref=e531]:
+        - generic [ref=e532]: Cheap Houses
+        - generic [ref=e533]: Underpriced properties, curated weekly
+      - generic [ref=e534]:
+        - paragraph [ref=e535]: © 2026 Cheap Houses. All rights reserved.
+        - generic [ref=e536]:
+          - generic "Social media" [ref=e537]:
+            - link "Instagram" [ref=e538] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e539]
+            - link "TikTok" [ref=e542] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e543]
+            - link "YouTube" [ref=e545] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e546]
+          - link "hello@cheaphouses.com" [ref=e548] [cursor=pointer]:
+            - /url: mailto:hello@cheaphouses.com
+  - button "Open Next.js Dev Tools" [ref=e554] [cursor=pointer]:
+    - img [ref=e555]

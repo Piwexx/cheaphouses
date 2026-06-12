@@ -19,17 +19,11 @@ export interface Listing {
 
 export interface AugmentedListing extends Listing {
   _p: number
-  _cc: string
   _cond: 'good' | 'average' | 'partial' | 'ruin'
   _type: 'farmhouse' | 'cottage' | 'village' | 'akiya'
 }
 
-export interface Country {
-  flag: string
-  name: string
-}
-
-export type FilterGroup = 'country' | 'price' | 'type' | 'condition'
+export type FilterGroup = 'price' | 'type' | 'condition'
 export type FilterValues = Record<FilterGroup, string>
 
 export interface FilterOption {

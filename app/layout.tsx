@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Cheap Houses — Underpriced properties, curated weekly',
-  description: 'One curator. Every listing reviewed by hand. Underpriced properties across 8 countries, delivered every Friday.',
+  description: 'One curator. Every listing reviewed by hand. Underpriced properties across the USA, delivered every Friday.',
 }
 
 export default function RootLayout({

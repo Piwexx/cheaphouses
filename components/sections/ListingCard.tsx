@@ -4,13 +4,6 @@ import { formatPrice } from '@/lib/utils'
 import { LISTING_TONES } from '@/lib/data'
 import type { AugmentedListing } from '@/types'
 
-function CurrencySymbol({ sym }: { sym: string }) {
-  if (sym === 'CA$') {
-    return <span className="cur-sym"><span className="cur-sym-country">CA</span>$</span>
-  }
-  return <span className="cur-sym">{sym}</span>
-}
-
 interface ListingCardProps {
   listing: AugmentedListing & { _key: number }
 }
@@ -29,14 +22,14 @@ export default function ListingCard({ listing: l }: ListingCardProps) {
         }}
       >
         <span className="card-badge">
-          {l.flag} {l.countryShort}
+          {l.locationShort}
         </span>
         {l.isNew && <span className="card-new-badge">New</span>}
       </div>
       <div className="card-body">
         <div className="card-price">
-          <CurrencySymbol sym={l.currencySymbol} />
-          {formatPrice(l.price, l.currencySymbol)}
+          <span className="cur-sym">{l.currencySymbol}</span>
+          {formatPrice(l.price)}
         </div>
         <div className="card-loc">{l.locationShort}</div>
         <div className="card-title">{l.title}</div>

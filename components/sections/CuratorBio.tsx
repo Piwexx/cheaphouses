@@ -9,7 +9,7 @@ export default function CuratorBio() {
             <span className="curator-role">· Founder &amp; curator</span>
           </div>
           <p className="curator-bio-body">
-            I&apos;m a writer and property researcher who spent three years buying a farmhouse in rural Portugal for €31K. That experience — full of dead ends, bad agents, and hidden gems — became the reason this newsletter exists. I now track underpriced real estate full-time across 8 countries and share only what I&apos;d buy myself.
+            I&apos;m a writer and property researcher who spent three years hunting for underpriced land across the rural USA. That experience — full of dead ends, estate sales, and hidden gems — became the reason this newsletter exists. I now track underpriced real estate full-time across the country and share only what I&apos;d buy myself.
           </p>
           <div className="curator-links">
             <a className="curator-link" href="#">Read the about page</a>

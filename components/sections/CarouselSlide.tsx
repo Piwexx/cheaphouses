@@ -4,13 +4,6 @@ import { formatPrice, emph } from '@/lib/utils'
 import { LISTING_TONES } from '@/lib/data'
 import type { Listing } from '@/types'
 
-function CurrencySymbol({ sym }: { sym: string }) {
-  if (sym === 'CA$') {
-    return <span className="cur-sym"><span className="cur-sym-country">CA</span>$</span>
-  }
-  return <span className="cur-sym">{sym}</span>
-}
-
 interface CarouselSlideProps {
   listing: Listing
   expanded: boolean
@@ -30,12 +23,12 @@ export default function CarouselSlide({ listing: l, expanded, onToggle }: Carous
         <div className="pick-price-badge">
           <small>Asking price</small>
           <span>
-            <CurrencySymbol sym={l.currencySymbol} />
-            {formatPrice(l.price, l.currencySymbol)}
+            <span className="cur-sym">{l.currencySymbol}</span>
+            {formatPrice(l.price)}
           </span>
         </div>
         <div className="pick-country-badge">
-          {l.flag} {l.country}
+          {l.countryShort}
         </div>
       </div>
       <div className="pick-body">
