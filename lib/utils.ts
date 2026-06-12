@@ -2,11 +2,6 @@ import { createElement, Fragment } from 'react'
 import type { ReactNode } from 'react'
 import type { Listing, AugmentedListing, FilterValues, SortOption } from '@/types'
 
-export function formatPrice(raw: string): string {
-  const num = parseInt(raw.replace(/[.,\s]/g, ''), 10)
-  return num.toLocaleString('en-US')
-}
-
 export function emph(text: string): ReactNode[] {
   const parts = text.split(/(\*\*[^*]+\*\*)/g)
   return parts.map((p, i) =>

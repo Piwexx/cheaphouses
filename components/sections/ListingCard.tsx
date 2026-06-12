@@ -1,6 +1,5 @@
 'use client'
 
-import { formatPrice } from '@/lib/utils'
 import { LISTING_TONES } from '@/lib/data'
 import type { AugmentedListing } from '@/types'
 
@@ -31,7 +30,7 @@ export default function ListingCard({ listing: l }: ListingCardProps) {
       <div className="card-body">
         <div className="card-price">
           <span className="cur-sym">{l.currencySymbol}</span>
-          {formatPrice(l.price)}
+          {l.price}
         </div>
         <div className="card-loc">{l.locationShort}</div>
         <div className="card-title">{l.title}</div>

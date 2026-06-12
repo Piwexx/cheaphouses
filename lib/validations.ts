@@ -6,5 +6,3 @@ export const emailSignupSchema = z.object({
     .min(1, 'Email is required')
     .email("Doesn't look like an email — mind checking that?"),
 })
-
-export type EmailSignupInput = z.infer<typeof emailSignupSchema>

@@ -1,6 +1,6 @@
 'use client'
 
-import { formatPrice, emph } from '@/lib/utils'
+import { emph } from '@/lib/utils'
 import { LISTING_TONES } from '@/lib/data'
 import type { Listing } from '@/types'
 
@@ -30,7 +30,7 @@ export default function CarouselSlide({ listing: l, expanded, onToggle }: Carous
           <small>Asking price</small>
           <span>
             <span className="cur-sym">{l.currencySymbol}</span>
-            {formatPrice(l.price)}
+            {l.price}
           </span>
         </div>
         <div className="pick-country-badge">
