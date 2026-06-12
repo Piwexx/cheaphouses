@@ -6,7 +6,7 @@ import type { BillingCycle } from '@/types'
 
 export default function Pricing() {
   const [billing, setBilling] = useState<BillingCycle>('annual')
-  const price = billing === 'annual' ? '10' : '15'
+  const price = billing === 'annual' ? '10' : '12'
 
   return (
     <section className="pricing reveal in" id="pricing">
@@ -31,7 +31,7 @@ export default function Pricing() {
               className={`billing-btn${billing === 'annual' ? ' active' : ''}`}
               onClick={() => setBilling('annual')}
             >
-              Annual <span className="billing-save">Save 33%</span>
+              Annual <span className="billing-save">Save 17%</span>
             </button>
           </div>
         </div>

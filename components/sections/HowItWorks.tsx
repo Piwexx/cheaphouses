@@ -5,13 +5,13 @@ const steps = [
     n: '01',
     Icon: HomeIcon,
     title: 'We scout, every day',
-    body: 'Estate sales, municipal auctions, inheritance disputes, motivated sellers who never made it onto Idealista or Rightmove. 200+ candidates pass through the queue each week.',
+    body: 'Estate sales, county auctions, inheritance disputes, motivated sellers who never listed on Zillow or Realtor.com. 200+ candidates pass through the queue each week.',
   },
   {
     n: '02',
     Icon: DocIcon,
     title: 'We name the catch',
-    body: "Every property gets a hand-written note. Roof, plumbing, legal status, neighbours, distance to a real grocery. We tell you what'll cost money before you fly out.",
+    body: "Every property gets a hand-written note. Roof, plumbing, legal status, neighbors, distance to a real grocery. We tell you what'll cost money before you fly out.",
   },
   {
     n: '03',
