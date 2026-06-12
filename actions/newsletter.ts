@@ -18,7 +18,7 @@ export async function signupAction(
   }
 
   const result = await subscribeEmail(parsed.data.email)
-  if (result === 'duplicate') {
+  if (result.result === 'duplicate') {
     return { status: 'error', message: "You're already on the list." }
   }
 

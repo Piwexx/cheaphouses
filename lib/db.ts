@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import { randomUUID } from 'node:crypto'
 import { z } from 'zod'
 import type { Listing, ListingTone } from '@/types'
 
@@ -67,15 +68,82 @@ export async function getListings(): Promise<Listing[]> {
   return (data as ListingRow[]).map(rowToListing)
 }
 
-export async function subscribeEmail(email: string): Promise<'ok' | 'duplicate'> {
+export async function subscribeEmail(
+  email: string,
+): Promise<{ result: 'ok'; token: string } | { result: 'duplicate' }> {
+  const token = randomUUID()
   const supabase = getSupabase()
-  const { error } = await supabase
-    .from('subscribers')
-    .insert({ email: email.toLowerCase().trim() })
+  const { error } = await supabase.from('subscribers').insert({
+    email: email.toLowerCase().trim(),
+    confirm_token: token,
+    token_expires_at: new Date(Date.now() + 86_400_000).toISOString(),
+  })
 
   if (error) {
-    if (error.code === '23505') return 'duplicate'
+    if (error.code === '23505') return { result: 'duplicate' }
     throw new Error(`subscribeEmail: ${error.message}`)
   }
-  return 'ok'
+  return { result: 'ok', token }
+}
+
+export interface Faq {
+  id: number
+  question: string
+  answer: string
+  linkText: string | null
+  linkHref: string | null
+  sortOrder: number
+}
+
+interface FaqRow {
+  id: number
+  question: string
+  answer: string
+  link_text: string | null
+  link_href: string | null
+  sort_order: number
+}
+
+export async function getFaqs(): Promise<Faq[]> {
+  'use cache'
+  const supabase = getSupabase()
+  const { data, error } = await supabase
+    .from('faqs')
+    .select('id, question, answer, link_text, link_href, sort_order')
+    .eq('is_active', true)
+    .order('sort_order', { ascending: true })
+
+  if (error) throw new Error(`getFaqs: ${error.message}`)
+  return (data as FaqRow[]).map(row => ({
+    id: row.id,
+    question: row.question,
+    answer: row.answer,
+    linkText: row.link_text,
+    linkHref: row.link_href,
+    sortOrder: row.sort_order,
+  }))
+}
+
+export async function confirmSubscriber(
+  token: string,
+): Promise<'confirmed' | 'invalid' | 'expired' | 'already_confirmed'> {
+  const supabase = getSupabase()
+
+  const { data, error } = await supabase
+    .from('subscribers')
+    .select('id, confirmed_at, token_expires_at')
+    .eq('confirm_token', token)
+    .single()
+
+  if (error || !data) return 'invalid'
+  if (data.confirmed_at) return 'already_confirmed'
+  if (data.token_expires_at && new Date(data.token_expires_at) < new Date()) return 'expired'
+
+  const { count } = await supabase
+    .from('subscribers')
+    .update({ confirmed_at: new Date().toISOString(), confirm_token: null, token_expires_at: null })
+    .eq('id', data.id)
+    .is('confirmed_at', null)
+
+  return count === 0 ? 'already_confirmed' : 'confirmed'
 }

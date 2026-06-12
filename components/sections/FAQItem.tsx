@@ -2,13 +2,10 @@
 
 import { useState } from 'react'
 import { ChevronIcon } from '@/components/ui/icons'
+import type { Faq } from '@/lib/db'
 
 interface FAQItemProps {
-  item: {
-    q: string
-    a: string
-    link?: { text: string; href: string }
-  }
+  item: Faq
 }
 
 export default function FAQItem({ item }: FAQItemProps) {
@@ -21,7 +18,7 @@ export default function FAQItem({ item }: FAQItemProps) {
         onClick={() => setOpen(!open)}
         aria-expanded={open}
       >
-        <span>{item.q}</span>
+        <span>{item.question}</span>
         <span className="faq-icon">
           <ChevronIcon />
         </span>
@@ -32,12 +29,12 @@ export default function FAQItem({ item }: FAQItemProps) {
       >
         <div className="faq-item__a-inner">
           <p className="faq-ans">
-            {item.a}
-            {item.link && (
+            {item.answer}
+            {item.linkHref && item.linkText && (
               <>
                 {' '}
-                <a className="faq-ans-link" href={item.link.href}>
-                  {item.link.text} →
+                <a className="faq-ans-link" href={item.linkHref}>
+                  {item.linkText} →
                 </a>
               </>
             )}
