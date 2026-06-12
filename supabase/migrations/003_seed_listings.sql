@@ -114,7 +114,7 @@ values
     'timber', false
   ),
   (
-    15, 'USA', '🇺🇸', 'Vermont', 'Northeast Kingdom · Vermont', 'NEK, Vermont',
+    15, 'USA', '🇺🇸', 'Vermont', 'Northeast Kingdom · Vermont', 'NEK, VT',
     '48,000', '$', 'Hunting cabin on 6 wooded acres',
     ARRAY['1 room', '40 m²', 'Off-grid'],
     'Off-grid. **No utilities, no septic, no road frontage past November.** Cabin is solid, dry, and tight — woodstove, propane fridge, gravity-fed spring water. Buyers should drive in before committing; the access trail is a 0.4-mile walk in mud season.',

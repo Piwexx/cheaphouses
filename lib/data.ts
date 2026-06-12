@@ -20,14 +20,15 @@ export const FILTER_DEFS: FilterDef[] = [
     group: 'price', title: 'Price range', options: [
       { val: 'all', label: 'All prices' }, { val: 'under20', label: 'Under $20K' },
       { val: 'under50', label: '$20K – $50K' }, { val: 'under100', label: '$50K – $100K' },
-      { val: 'over100', label: 'Over $100K' },
+      { val: 'under200', label: '$100K – $200K' },
     ],
   },
   {
     group: 'type', title: 'Property type', options: [
       { val: 'all', label: 'All types' }, { val: 'farmhouse', label: 'Farmhouse' },
       { val: 'cottage', label: 'Cottage' }, { val: 'village', label: 'Village house' },
-      { val: 'akiya', label: 'Akiya' },
+      { val: 'akiya', label: 'Akiya' }, { val: 'cabin', label: 'Cabin' },
+      { val: 'ranch', label: 'Ranch' }, { val: 'offgrid', label: 'Off-grid' },
     ],
   },
   {
@@ -38,7 +39,23 @@ export const FILTER_DEFS: FilterDef[] = [
   },
 ]
 
-export const FILTER_DEFAULTS: FilterValues = { price: 'all', type: 'all', condition: 'all' }
+export const FILTER_DEFAULTS: FilterValues = { price: 'all', type: 'all', condition: 'all', state: 'all' }
+
+export const STATE_NAMES: Record<string, string> = {
+  AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas',
+  CA: 'California', CO: 'Colorado', CT: 'Connecticut', DE: 'Delaware',
+  FL: 'Florida', GA: 'Georgia', HI: 'Hawaii', ID: 'Idaho',
+  IL: 'Illinois', IN: 'Indiana', IA: 'Iowa', KS: 'Kansas',
+  KY: 'Kentucky', LA: 'Louisiana', ME: 'Maine', MD: 'Maryland',
+  MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota', MS: 'Mississippi',
+  MO: 'Missouri', MT: 'Montana', NE: 'Nebraska', NV: 'Nevada',
+  NH: 'New Hampshire', NJ: 'New Jersey', NM: 'New Mexico', NY: 'New York',
+  NC: 'North Carolina', ND: 'North Dakota', OH: 'Ohio', OK: 'Oklahoma',
+  OR: 'Oregon', PA: 'Pennsylvania', RI: 'Rhode Island', SC: 'South Carolina',
+  SD: 'South Dakota', TN: 'Tennessee', TX: 'Texas', UT: 'Utah',
+  VT: 'Vermont', VA: 'Virginia', WA: 'Washington', WV: 'West Virginia',
+  WI: 'Wisconsin', WY: 'Wyoming',
+}
 
 export const PILL_LABELS: Record<string, Record<string, string>> = {}
 FILTER_DEFS.forEach(({ group, options }) => {

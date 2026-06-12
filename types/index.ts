@@ -20,10 +20,10 @@ export interface Listing {
 export interface AugmentedListing extends Listing {
   _p: number
   _cond: 'good' | 'average' | 'partial' | 'ruin'
-  _type: 'farmhouse' | 'cottage' | 'village' | 'akiya'
+  _type: 'farmhouse' | 'cottage' | 'village' | 'akiya' | 'cabin' | 'ranch' | 'offgrid'
 }
 
-export type FilterGroup = 'price' | 'type' | 'condition'
+export type FilterGroup = 'price' | 'type' | 'condition' | 'state'
 export type FilterValues = Record<FilterGroup, string>
 
 export interface FilterOption {

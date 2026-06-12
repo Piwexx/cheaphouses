@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useMemo, useEffect } from 'react'
-import { FILTER_DEFS, FILTER_DEFAULTS, PILL_LABELS } from '@/lib/data'
-import { filterListings } from '@/lib/utils'
+import { FILTER_DEFS, FILTER_DEFAULTS, PILL_LABELS, STATE_NAMES } from '@/lib/data'
+import { filterListings, extractState } from '@/lib/utils'
 import { SlidersIcon, XIcon } from '@/components/ui/icons'
 import ListingCard from './ListingCard'
 import type { AugmentedListing, FilterValues, SortOption } from '@/types'
@@ -21,6 +21,30 @@ export default function PreviewGrid({ listings: allListings }: PreviewGridProps)
     () => filterListings(allListings, filters, sortBy),
     [allListings, filters, sortBy],
   )
+  const stateOptions = useMemo(() => {
+    const seen = new Set<string>()
+    for (const l of allListings) {
+      const s = extractState(l.locationShort)
+      if (s) seen.add(s)
+    }
+    return Array.from(seen).sort()
+  }, [allListings])
+
+  const allFilterDefs = useMemo(() => {
+    if (stateOptions.length === 0) return FILTER_DEFS
+    return [
+      ...FILTER_DEFS,
+      {
+        group: 'state' as const,
+        title: 'State',
+        options: [
+          { val: 'all', label: 'All states' },
+          ...stateOptions.map(s => ({ val: s, label: STATE_NAMES[s] || s })),
+        ],
+      },
+    ]
+  }, [stateOptions])
+
   const items = useMemo(() => {
     const src = filtered.length > 0 ? filtered : allListings
     return Array.from(
@@ -34,7 +58,7 @@ export default function PreviewGrid({ listings: allListings }: PreviewGridProps)
     .filter(([, v]) => v !== 'all')
     .map(([group, val]) => ({
       group: group as keyof FilterValues,
-      label: PILL_LABELS[group]?.[val] || val,
+      label: PILL_LABELS[group]?.[val] ?? (group === 'state' ? (STATE_NAMES[val] || val) : val),
     }))
 
   const openModal = () => {
@@ -159,10 +183,10 @@ export default function PreviewGrid({ listings: allListings }: PreviewGridProps)
               </button>
             </div>
             <div className="filter-modal-body">
-              {FILTER_DEFS.map(({ group, title, options }) => (
+              {allFilterDefs.map(({ group, title, options }) => (
                 <div className="filter-section" key={group}>
                   <div className="filter-section-title">{title}</div>
-                  <div className="modal-pills">
+                  <div className={`modal-pills${group === 'state' ? ' modal-pills--states' : ''}`}>
                     {options.map(({ val, label }) => (
                       <button
                         key={val}

@@ -16,6 +16,11 @@ export function emph(text: string): ReactNode[] {
   )
 }
 
+export function extractState(locationShort: string): string {
+  const idx = locationShort.lastIndexOf(',')
+  return idx === -1 ? '' : locationShort.slice(idx + 1).trim()
+}
+
 export function augmentListings(listings: Listing[]): AugmentedListing[] {
   return listings.map(l => {
     const p = parseInt(l.price.replace(/[.,]/g, '').replace(/[^0-9]/g, ''), 10) || 0
@@ -28,8 +33,19 @@ export function augmentListings(listings: Listing[]): AugmentedListing[] {
 
     const t = l.title.toLowerCase()
     let _type: AugmentedListing['_type'] = 'village'
-    if (t.includes('farmhouse') || t.includes('bungalow')) _type = 'farmhouse'
-    else if (t.includes('cottage') || t.includes('cabin') || t.includes('camp')) _type = 'cottage'
+    if (meta.includes('off-grid') || meta.includes('off grid') || t.includes('off-grid') || t.includes('off grid')) {
+      _type = 'offgrid'
+    } else if (t.includes('ranch') || meta.includes('ranch')) {
+      _type = 'ranch'
+    } else if (t.includes('cabin') || t.includes('camp')) {
+      _type = 'cabin'
+    } else if (t.includes('farmhouse') || t.includes('bungalow')) {
+      _type = 'farmhouse'
+    } else if (t.includes('cottage')) {
+      _type = 'cottage'
+    } else if (t.includes('akiya') || meta.includes('akiya')) {
+      _type = 'akiya'
+    }
 
     return { ...l, _p: p, _cond, _type }
   })
@@ -41,11 +57,12 @@ export function filterListings(
   sortBy: SortOption,
 ): AugmentedListing[] {
   const matchPrice = (p: number, v: string): boolean => {
-    if (v === 'all') return true
-    if (v === 'under20') return p < 20000
-    if (v === 'under50') return p >= 20000 && p < 50000
-    if (v === 'under100') return p >= 50000 && p < 100000
-    return p >= 100000
+    if (v === 'all')      return true
+    if (v === 'under20')  return p < 20_000
+    if (v === 'under50')  return p >= 20_000 && p < 50_000
+    if (v === 'under100') return p >= 50_000 && p < 100_000
+    if (v === 'under200') return p >= 100_000 && p < 200_000
+    return false
   }
   const matchCond = (c: string, v: string): boolean => {
     if (v === 'all') return true
@@ -56,7 +73,8 @@ export function filterListings(
   const list = all.filter(l =>
     matchPrice(l._p, filters.price) &&
     (filters.type === 'all' || l._type === filters.type) &&
-    matchCond(l._cond, filters.condition)
+    matchCond(l._cond, filters.condition) &&
+    (filters.state === 'all' || extractState(l.locationShort) === filters.state)
   )
 
   return [...list].sort((a, b) =>
