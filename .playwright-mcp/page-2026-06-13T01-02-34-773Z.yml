@@ -1,0 +1,90 @@
+- generic [ref=e1]:
+  - generic [ref=e30]:
+    - banner [ref=e31]:
+      - generic [ref=e32]:
+        - link "Cheap Houses" [ref=e33] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e34]:
+          - link "Dashboard" [ref=e35] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=e36]: admin-e2e-test@example.com
+          - button "Log out" [ref=e38] [cursor=pointer]
+    - main [ref=e39]:
+      - generic [ref=e355]:
+        - link "← Back to listings" [ref=e356] [cursor=pointer]:
+          - /url: /admin
+        - heading "Edit listing" [level=1] [ref=e358]
+        - generic [ref=e359]:
+          - generic [ref=e360]: Title
+          - textbox "Title Title" [ref=e361]:
+            - /placeholder: Brick farmhouse on 2 acres
+            - text: E2E test cottage, do not buy
+          - generic [ref=e362]:
+            - generic [ref=e363]:
+              - generic [ref=e364]: State
+              - textbox "State State" [ref=e365]:
+                - /placeholder: Tennessee
+                - text: Kansas
+            - generic [ref=e366]:
+              - generic [ref=e367]: State code
+              - textbox "State code State code" [ref=e368]:
+                - /placeholder: TN
+                - text: KS
+            - generic [ref=e369]:
+              - generic [ref=e370]: Location
+              - textbox "Location Location" [ref=e371]:
+                - /placeholder: Unicoi County, Tennessee
+                - text: Chase County, Kansas
+            - generic [ref=e372]:
+              - generic [ref=e373]: Short location
+              - textbox "Short location Short location" [ref=e374]:
+                - /placeholder: Unicoi Co., TN
+                - text: Chase Co., KS
+            - generic [ref=e375]:
+              - generic [ref=e376]: Price
+              - textbox "Price Price" [ref=e377]:
+                - /placeholder: 42,000
+                - text: 12,500
+            - generic [ref=e378]:
+              - generic [ref=e379]: Currency symbol
+              - textbox "Currency symbol Currency symbol" [ref=e380]:
+                - /placeholder: $
+                - text: $
+            - generic [ref=e381]:
+              - generic [ref=e382]: Tone
+              - combobox "Tone Tone" [ref=e383]:
+                - option "olive" [selected]
+                - option "terracotta"
+                - option "granite"
+                - option "cedar"
+                - option "pine"
+                - option "timber"
+            - generic [ref=e384]:
+              - generic [ref=e385]: Listing URL (optional)
+              - textbox "Listing URL (optional) Listing URL (optional)" [ref=e386]:
+                - /placeholder: https://www.zillow.com/…
+          - generic [ref=e387]: Details — one per line
+          - textbox "Details — one per line Details — one per line" [ref=e388]:
+            - /placeholder: "3 rooms\n110 m²\nFixer-upper"
+            - text: 2 rooms 80 m² Fixer-upper
+          - generic [ref=e389]: Note — use **bold** for emphasis
+          - textbox "Note — use **bold** for emphasis Note — use **bold** for emphasis" [ref=e390]:
+            - /placeholder: Solid bones, **new roof in 2023**, walking distance to the square.
+            - text: Created by an automated E2E test — **safe to delete**.
+          - generic [ref=e391]: Image — upload a file…
+          - button "Image — upload a file… Image — upload a file…" [active] [ref=e392]
+          - generic [ref=e393]: …or paste an image URL
+          - textbox "…or paste an image URL …or paste an image URL" [ref=e394]:
+            - /placeholder: https://images.unsplash.com/…
+          - img "Current image" [ref=e395]
+          - paragraph [ref=e396]: Leave both image fields empty to keep the current image.
+          - generic [ref=e397] [cursor=pointer]:
+            - checkbox "Mark as new Mark as new" [checked] [ref=e398]
+            - text: Mark as new
+          - generic [ref=e399] [cursor=pointer]:
+            - checkbox "Published Published" [checked] [ref=e400]
+            - text: Published
+          - button "Save changes" [ref=e401] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e25] [cursor=pointer]:
+    - img [ref=e26]
+  - alert [ref=e29]: Edit listing — Admin — Cheap Houses

@@ -1,5 +1,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
+import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import type { User } from '@supabase/supabase-js'
 
@@ -40,5 +41,20 @@ export async function createSupabaseServerClient() {
 export async function getCurrentUser(): Promise<User | null> {
   const supabase = await createSupabaseServerClient()
   const { data: { user } } = await supabase.auth.getUser()
+  return user
+}
+
+// The role lives in app_metadata, which only the service role can write —
+// users can't escalate it (unlike user_metadata).
+export function isAdmin(user: User | null): boolean {
+  return user?.app_metadata?.role === 'admin'
+}
+
+// Defense in depth alongside proxy.ts: call it in the admin layout and at the
+// top of every admin Server Action.
+export async function requireAdmin(): Promise<User> {
+  const user = await getCurrentUser()
+  if (!user) redirect('/login?next=/admin')
+  if (!isAdmin(user)) redirect('/dashboard')
   return user
 }

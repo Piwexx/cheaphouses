@@ -39,6 +39,19 @@ export default async function proxy(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
+  if (path.startsWith('/admin')) {
+    if (!user) {
+      const url = request.nextUrl.clone()
+      url.pathname = '/login'
+      url.search = ''
+      url.searchParams.set('next', path)
+      return NextResponse.redirect(url)
+    }
+    if (user.app_metadata?.role !== 'admin') {
+      return NextResponse.redirect(new URL('/dashboard', request.url))
+    }
+  }
+
   if ((path === '/login' || path === '/register') && user) {
     return NextResponse.redirect(new URL('/dashboard', request.url))
   }

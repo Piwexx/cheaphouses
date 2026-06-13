@@ -1,6 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
+import { cacheTag } from 'next/cache'
 import { randomUUID } from 'node:crypto'
 import { z } from 'zod'
+import { createSupabaseServerClient } from '@/lib/supabase/server'
 import type { Listing, ListingTone } from '@/types'
 
 const envSchema = z.object({
@@ -32,6 +34,7 @@ interface ListingRow {
   link:            string | null
   tone:            string
   is_new:          boolean
+  published:       boolean
 }
 
 const VALID_TONES = new Set<string>(['olive', 'terracotta', 'granite', 'cedar', 'pine', 'timber'])
@@ -53,19 +56,119 @@ function rowToListing(row: ListingRow): Listing {
     link:          row.link,
     tone:          row.tone as ListingTone,
     isNew:         row.is_new,
+    published:     row.published,
+  }
+}
+
+export type ListingInput = Omit<Listing, 'id'>
+
+function listingToRow(input: ListingInput): Omit<ListingRow, 'id'> {
+  return {
+    state:           input.state,
+    state_short:     input.stateShort,
+    location:        input.location,
+    location_short:  input.locationShort,
+    price:           input.price,
+    currency_symbol: input.currencySymbol,
+    title:           input.title,
+    meta:            input.meta,
+    note:            input.note,
+    image:           input.image,
+    link:            input.link,
+    tone:            input.tone,
+    is_new:          input.isNew,
+    published:       input.published,
   }
 }
 
 export async function getListings(): Promise<Listing[]> {
   'use cache'
+  cacheTag('listings')
+  // The explicit published filter is required: this client is service-role
+  // and bypasses RLS.
   const supabase = getSupabase()
+  const { data, error } = await supabase
+    .from('listings')
+    .select('*')
+    .eq('published', true)
+    .order('id', { ascending: true })
+
+  if (error) throw new Error(`getListings: ${error.message}`)
+  return (data as ListingRow[]).map(rowToListing)
+}
+
+// Admin queries below use the cookie-bound anon client on purpose: the RLS
+// policies from migration 008 (admin-only writes) must actually apply, so a
+// bug in requireAdmin() can't silently grant writes.
+
+export async function getAllListingsAdmin(): Promise<Listing[]> {
+  const supabase = await createSupabaseServerClient()
   const { data, error } = await supabase
     .from('listings')
     .select('*')
     .order('id', { ascending: true })
 
-  if (error) throw new Error(`getListings: ${error.message}`)
+  if (error) throw new Error(`getAllListingsAdmin: ${error.message}`)
   return (data as ListingRow[]).map(rowToListing)
+}
+
+export async function getListingById(id: number): Promise<Listing | null> {
+  const supabase = await createSupabaseServerClient()
+  const { data, error } = await supabase
+    .from('listings')
+    .select('*')
+    .eq('id', id)
+    .maybeSingle()
+
+  if (error) throw new Error(`getListingById: ${error.message}`)
+  return data ? rowToListing(data as ListingRow) : null
+}
+
+export async function createListing(input: ListingInput): Promise<Listing> {
+  const supabase = await createSupabaseServerClient()
+  const { data, error } = await supabase
+    .from('listings')
+    .insert(listingToRow(input))
+    .select()
+    .single()
+
+  if (error) throw new Error(`createListing: ${error.message}`)
+  return rowToListing(data as ListingRow)
+}
+
+// With RLS a non-admin gets 0 affected rows without an error, so update/delete
+// must check the count.
+export async function updateListing(id: number, input: ListingInput): Promise<void> {
+  const supabase = await createSupabaseServerClient()
+  const { count, error } = await supabase
+    .from('listings')
+    .update(listingToRow(input), { count: 'exact' })
+    .eq('id', id)
+
+  if (error) throw new Error(`updateListing: ${error.message}`)
+  if (count === 0) throw new Error(`updateListing: listing ${id} not found or not allowed`)
+}
+
+export async function deleteListing(id: number): Promise<void> {
+  const supabase = await createSupabaseServerClient()
+  const { count, error } = await supabase
+    .from('listings')
+    .delete({ count: 'exact' })
+    .eq('id', id)
+
+  if (error) throw new Error(`deleteListing: ${error.message}`)
+  if (count === 0) throw new Error(`deleteListing: listing ${id} not found or not allowed`)
+}
+
+export async function setListingPublished(id: number, published: boolean): Promise<void> {
+  const supabase = await createSupabaseServerClient()
+  const { count, error } = await supabase
+    .from('listings')
+    .update({ published }, { count: 'exact' })
+    .eq('id', id)
+
+  if (error) throw new Error(`setListingPublished: ${error.message}`)
+  if (count === 0) throw new Error(`setListingPublished: listing ${id} not found or not allowed`)
 }
 
 export async function subscribeEmail(

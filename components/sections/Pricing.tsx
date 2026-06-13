@@ -18,8 +18,9 @@ export default function Pricing() {
             Two ways to read <em>Cheap Houses</em>
           </h2>
           <p className="pricing-sub">
-            The newsletter is free, forever. Membership unlocks the full archive,
-            direct seller contacts, and state search.
+            The newsletter is free, forever. Membership unlocks every listing we
+            find &mdash; the full archive, direct seller &amp; municipal contacts,
+            and search on the members&apos; platform.
           </p>
           <div className="billing-toggle">
             <button
@@ -71,13 +72,16 @@ export default function Pricing() {
             </div>
             <p className="plan-desc">
               The complete picture. Every property we find, the contacts you need to act
-              on it — no agents, no waiting.
+              on it, and a platform to browse it all — no agents, no waiting.
             </p>
             <div className="plan-divider" />
             <ul className="plan-features">
               <li><CheckIcon /><span>20+ properties per issue, full archive</span></li>
               <li><CheckIcon /><span>Direct seller &amp; municipal contacts</span></li>
+              <li><CheckIcon /><span>Renovation estimates where available</span></li>
               <li><CheckIcon /><span>Search by state, budget &amp; condition</span></li>
+              <li><CheckIcon /><span>Browse every listing on the members&apos; platform</span></li>
+              <li><CheckIcon /><span>No ads, no agents, no commission</span></li>
             </ul>
             <form action={createCheckoutSessionAction}>
               <input type="hidden" name="billing" value={billing} />

@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Cheap Houses" [ref=e3] [cursor=pointer]:
+      - /url: /
+    - generic [ref=e4]:
+      - generic [ref=e5]: Members
+      - heading "Welcome back" [level=1] [ref=e6]
+      - generic [ref=e7]:
+        - tablist [ref=e8]:
+          - tab "Password" [selected] [ref=e9] [cursor=pointer]
+          - tab "Email me a link" [ref=e10] [cursor=pointer]
+        - generic [ref=e11]:
+          - generic [ref=e12]: Email
+          - textbox "Email" [ref=e13]:
+            - /placeholder: your@email.com
+          - generic [ref=e14]: Password
+          - textbox "Password" [ref=e15]
+          - button "Log in" [ref=e16] [cursor=pointer]
+      - paragraph [ref=e17]:
+        - text: No account yet?
+        - link "Create one" [ref=e18] [cursor=pointer]:
+          - /url: /register
+        - text: — or just
+        - link "become a member" [ref=e19] [cursor=pointer]:
+          - /url: /#pricing
+        - text: .
+  - button "Open Next.js Dev Tools" [ref=e25] [cursor=pointer]:
+    - img [ref=e26]
+  - alert [ref=e29]

@@ -15,6 +15,7 @@ export interface Listing {
   link: string | null
   tone: ListingTone
   isNew: boolean
+  published: boolean
 }
 
 export interface AugmentedListing extends Listing {

@@ -1,0 +1,268 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e30]:
+    - banner [ref=e31]:
+      - generic [ref=e32]:
+        - link "Cheap Houses" [ref=e33] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e34]:
+          - link "Dashboard" [ref=e35] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=e36]: admin-e2e-test@example.com
+          - button "Log out" [ref=e38] [cursor=pointer]
+    - main [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: Admin
+        - generic [ref=e42]:
+          - heading "Listings" [level=1] [ref=e43]
+          - link "New listing" [ref=e44] [cursor=pointer]:
+            - /url: /admin/listings/new
+        - table [ref=e46]:
+          - rowgroup [ref=e47]:
+            - row "Image Property Price Status Actions" [ref=e48]:
+              - columnheader "Image" [ref=e49]
+              - columnheader "Property" [ref=e50]
+              - columnheader "Price" [ref=e51]
+              - columnheader "Status" [ref=e52]
+              - columnheader "Actions" [ref=e53]
+          - rowgroup [ref=e54]:
+            - row "Stone farmhouse on 3.8 acres, Appalachians Stone farmhouse on 3.8 acres, Appalachians Unicoi Co., TN · New $42,000 Published Edit Unpublish Delete" [ref=e55]:
+              - cell "Stone farmhouse on 3.8 acres, Appalachians" [ref=e56]:
+                - img "Stone farmhouse on 3.8 acres, Appalachians" [ref=e57]
+              - cell "Stone farmhouse on 3.8 acres, Appalachians Unicoi Co., TN · New" [ref=e58]:
+                - generic [ref=e59]: Stone farmhouse on 3.8 acres, Appalachians
+                - generic [ref=e60]: Unicoi Co., TN · New
+              - cell "$42,000" [ref=e61]
+              - cell "Published" [ref=e62]
+              - cell "Edit Unpublish Delete" [ref=e63]:
+                - generic [ref=e64]:
+                  - link "Edit" [ref=e65] [cursor=pointer]:
+                    - /url: /admin/listings/1/edit
+                  - button "Unpublish" [ref=e67] [cursor=pointer]
+                  - button "Delete" [ref=e69] [cursor=pointer]
+            - row "Shotgun house, one block from the square Shotgun house, one block from the square Leflore Co., MS · New $18,000 Published Edit Unpublish Delete" [ref=e70]:
+              - cell "Shotgun house, one block from the square" [ref=e71]:
+                - img "Shotgun house, one block from the square" [ref=e72]
+              - cell "Shotgun house, one block from the square Leflore Co., MS · New" [ref=e73]:
+                - generic [ref=e74]: Shotgun house, one block from the square
+                - generic [ref=e75]: Leflore Co., MS · New
+              - cell "$18,000" [ref=e76]
+              - cell "Published" [ref=e77]
+              - cell "Edit Unpublish Delete" [ref=e78]:
+                - generic [ref=e79]:
+                  - link "Edit" [ref=e80] [cursor=pointer]:
+                    - /url: /admin/listings/2/edit
+                  - button "Unpublish" [ref=e82] [cursor=pointer]
+                  - button "Delete" [ref=e84] [cursor=pointer]
+            - row "Brick farmhouse on 1.5 acres, grain country Brick farmhouse on 1.5 acres, grain country Ringgold Co., IA $29,000 Published Edit Unpublish Delete" [ref=e85]:
+              - cell "Brick farmhouse on 1.5 acres, grain country" [ref=e86]:
+                - img "Brick farmhouse on 1.5 acres, grain country" [ref=e87]
+              - cell "Brick farmhouse on 1.5 acres, grain country Ringgold Co., IA" [ref=e88]:
+                - generic [ref=e89]: Brick farmhouse on 1.5 acres, grain country
+                - generic [ref=e90]: Ringgold Co., IA
+              - cell "$29,000" [ref=e91]
+              - cell "Published" [ref=e92]
+              - cell "Edit Unpublish Delete" [ref=e93]:
+                - generic [ref=e94]:
+                  - link "Edit" [ref=e95] [cursor=pointer]:
+                    - /url: /admin/listings/3/edit
+                  - button "Unpublish" [ref=e97] [cursor=pointer]
+                  - button "Delete" [ref=e99] [cursor=pointer]
+            - row "Adobe house, two acres, high desert Adobe house, two acres, high desert Mora Co., NM $14,500 Published Edit Unpublish Delete" [ref=e100]:
+              - cell "Adobe house, two acres, high desert" [ref=e101]:
+                - img "Adobe house, two acres, high desert" [ref=e102]
+              - cell "Adobe house, two acres, high desert Mora Co., NM" [ref=e103]:
+                - generic [ref=e104]: Adobe house, two acres, high desert
+                - generic [ref=e105]: Mora Co., NM
+              - cell "$14,500" [ref=e106]
+              - cell "Published" [ref=e107]
+              - cell "Edit Unpublish Delete" [ref=e108]:
+                - generic [ref=e109]:
+                  - link "Edit" [ref=e110] [cursor=pointer]:
+                    - /url: /admin/listings/4/edit
+                  - button "Unpublish" [ref=e112] [cursor=pointer]
+                  - button "Delete" [ref=e114] [cursor=pointer]
+            - row "Ozarks cabin with spring-fed creek Ozarks cabin with spring-fed creek Newton Co., AR · New $27,000 Published Edit Unpublish Delete" [ref=e115]:
+              - cell "Ozarks cabin with spring-fed creek" [ref=e116]:
+                - img "Ozarks cabin with spring-fed creek" [ref=e117]
+              - cell "Ozarks cabin with spring-fed creek Newton Co., AR · New" [ref=e118]:
+                - generic [ref=e119]: Ozarks cabin with spring-fed creek
+                - generic [ref=e120]: Newton Co., AR · New
+              - cell "$27,000" [ref=e121]
+              - cell "Published" [ref=e122]
+              - cell "Edit Unpublish Delete" [ref=e123]:
+                - generic [ref=e124]:
+                  - link "Edit" [ref=e125] [cursor=pointer]:
+                    - /url: /admin/listings/5/edit
+                  - button "Unpublish" [ref=e127] [cursor=pointer]
+                  - button "Delete" [ref=e129] [cursor=pointer]
+            - row "Mountain bungalow on 1.2 acres Mountain bungalow on 1.2 acres Pocahontas Co., WV $35,000 Published Edit Unpublish Delete" [ref=e130]:
+              - cell "Mountain bungalow on 1.2 acres" [ref=e131]:
+                - img "Mountain bungalow on 1.2 acres" [ref=e132]
+              - cell "Mountain bungalow on 1.2 acres Pocahontas Co., WV" [ref=e133]:
+                - generic [ref=e134]: Mountain bungalow on 1.2 acres
+                - generic [ref=e135]: Pocahontas Co., WV
+              - cell "$35,000" [ref=e136]
+              - cell "Published" [ref=e137]
+              - cell "Edit Unpublish Delete" [ref=e138]:
+                - generic [ref=e139]:
+                  - link "Edit" [ref=e140] [cursor=pointer]:
+                    - /url: /admin/listings/6/edit
+                  - button "Unpublish" [ref=e142] [cursor=pointer]
+                  - button "Delete" [ref=e144] [cursor=pointer]
+            - row "Cape farmhouse on 4 acres, potato country Cape farmhouse on 4 acres, potato country Aroostook Co., ME $55,000 Published Edit Unpublish Delete" [ref=e145]:
+              - cell "Cape farmhouse on 4 acres, potato country" [ref=e146]:
+                - img "Cape farmhouse on 4 acres, potato country" [ref=e147]
+              - cell "Cape farmhouse on 4 acres, potato country Aroostook Co., ME" [ref=e148]:
+                - generic [ref=e149]: Cape farmhouse on 4 acres, potato country
+                - generic [ref=e150]: Aroostook Co., ME
+              - cell "$55,000" [ref=e151]
+              - cell "Published" [ref=e152]
+              - cell "Edit Unpublish Delete" [ref=e153]:
+                - generic [ref=e154]:
+                  - link "Edit" [ref=e155] [cursor=pointer]:
+                    - /url: /admin/listings/7/edit
+                  - button "Unpublish" [ref=e157] [cursor=pointer]
+                  - button "Delete" [ref=e159] [cursor=pointer]
+            - row "Lakeside camp, Upper Peninsula, 200ft of frontage Lakeside camp, Upper Peninsula, 200ft of frontage Alger Co., MI · New $39,000 Published Edit Unpublish Delete" [ref=e160]:
+              - cell "Lakeside camp, Upper Peninsula, 200ft of frontage" [ref=e161]:
+                - img "Lakeside camp, Upper Peninsula, 200ft of frontage" [ref=e162]
+              - cell "Lakeside camp, Upper Peninsula, 200ft of frontage Alger Co., MI · New" [ref=e163]:
+                - generic [ref=e164]: Lakeside camp, Upper Peninsula, 200ft of frontage
+                - generic [ref=e165]: Alger Co., MI · New
+              - cell "$39,000" [ref=e166]
+              - cell "Published" [ref=e167]
+              - cell "Edit Unpublish Delete" [ref=e168]:
+                - generic [ref=e169]:
+                  - link "Edit" [ref=e170] [cursor=pointer]:
+                    - /url: /admin/listings/8/edit
+                  - button "Unpublish" [ref=e172] [cursor=pointer]
+                  - button "Delete" [ref=e174] [cursor=pointer]
+            - row "Timber-frame farmhouse at 3,400ft elevation Timber-frame farmhouse at 3,400ft elevation Tucker Co., WV $52,000 Published Edit Unpublish Delete" [ref=e175]:
+              - cell "Timber-frame farmhouse at 3,400ft elevation" [ref=e176]:
+                - img "Timber-frame farmhouse at 3,400ft elevation" [ref=e177]
+              - cell "Timber-frame farmhouse at 3,400ft elevation Tucker Co., WV" [ref=e178]:
+                - generic [ref=e179]: Timber-frame farmhouse at 3,400ft elevation
+                - generic [ref=e180]: Tucker Co., WV
+              - cell "$52,000" [ref=e181]
+              - cell "Published" [ref=e182]
+              - cell "Edit Unpublish Delete" [ref=e183]:
+                - generic [ref=e184]:
+                  - link "Edit" [ref=e185] [cursor=pointer]:
+                    - /url: /admin/listings/9/edit
+                  - button "Unpublish" [ref=e187] [cursor=pointer]
+                  - button "Delete" [ref=e189] [cursor=pointer]
+            - row "Brick Victorian, three floors, river town Brick Victorian, three floors, river town Meigs Co., OH · New $22,000 Published Edit Unpublish Delete" [ref=e190]:
+              - cell "Brick Victorian, three floors, river town" [ref=e191]:
+                - img "Brick Victorian, three floors, river town" [ref=e192]
+              - cell "Brick Victorian, three floors, river town Meigs Co., OH · New" [ref=e193]:
+                - generic [ref=e194]: Brick Victorian, three floors, river town
+                - generic [ref=e195]: Meigs Co., OH · New
+              - cell "$22,000" [ref=e196]
+              - cell "Published" [ref=e197]
+              - cell "Edit Unpublish Delete" [ref=e198]:
+                - generic [ref=e199]:
+                  - link "Edit" [ref=e200] [cursor=pointer]:
+                    - /url: /admin/listings/10/edit
+                  - button "Unpublish" [ref=e202] [cursor=pointer]
+                  - button "Delete" [ref=e204] [cursor=pointer]
+            - row "Stone hollow homestead, 1.8 acres Stone hollow homestead, 1.8 acres Leslie Co., KY $31,000 Published Edit Unpublish Delete" [ref=e205]:
+              - cell "Stone hollow homestead, 1.8 acres" [ref=e206]:
+                - img "Stone hollow homestead, 1.8 acres" [ref=e207]
+              - cell "Stone hollow homestead, 1.8 acres Leslie Co., KY" [ref=e208]:
+                - generic [ref=e209]: Stone hollow homestead, 1.8 acres
+                - generic [ref=e210]: Leslie Co., KY
+              - cell "$31,000" [ref=e211]
+              - cell "Published" [ref=e212]
+              - cell "Edit Unpublish Delete" [ref=e213]:
+                - generic [ref=e214]:
+                  - link "Edit" [ref=e215] [cursor=pointer]:
+                    - /url: /admin/listings/11/edit
+                  - button "Unpublish" [ref=e217] [cursor=pointer]
+                  - button "Delete" [ref=e219] [cursor=pointer]
+            - row "Village house, three floors, Catskills Village house, three floors, Catskills Delaware Co., NY $26,500 Published Edit Unpublish Delete" [ref=e220]:
+              - cell "Village house, three floors, Catskills" [ref=e221]:
+                - img "Village house, three floors, Catskills" [ref=e222]
+              - cell "Village house, three floors, Catskills Delaware Co., NY" [ref=e223]:
+                - generic [ref=e224]: Village house, three floors, Catskills
+                - generic [ref=e225]: Delaware Co., NY
+              - cell "$26,500" [ref=e226]
+              - cell "Published" [ref=e227]
+              - cell "Edit Unpublish Delete" [ref=e228]:
+                - generic [ref=e229]:
+                  - link "Edit" [ref=e230] [cursor=pointer]:
+                    - /url: /admin/listings/12/edit
+                  - button "Unpublish" [ref=e232] [cursor=pointer]
+                  - button "Delete" [ref=e234] [cursor=pointer]
+            - row "Northwoods cabin, 100ft lake frontage Northwoods cabin, 100ft lake frontage Lake of the Woods, MN $33,000 Published Edit Unpublish Delete" [ref=e235]:
+              - cell "Northwoods cabin, 100ft lake frontage" [ref=e236]:
+                - img "Northwoods cabin, 100ft lake frontage" [ref=e237]
+              - cell "Northwoods cabin, 100ft lake frontage Lake of the Woods, MN" [ref=e238]:
+                - generic [ref=e239]: Northwoods cabin, 100ft lake frontage
+                - generic [ref=e240]: Lake of the Woods, MN
+              - cell "$33,000" [ref=e241]
+              - cell "Published" [ref=e242]
+              - cell "Edit Unpublish Delete" [ref=e243]:
+                - generic [ref=e244]:
+                  - link "Edit" [ref=e245] [cursor=pointer]:
+                    - /url: /admin/listings/13/edit
+                  - button "Unpublish" [ref=e247] [cursor=pointer]
+                  - button "Delete" [ref=e249] [cursor=pointer]
+            - row "Fieldstone house, two floors, 0.8 acres Fieldstone house, two floors, 0.8 acres Bedford Co., PA $49,000 Published Edit Unpublish Delete" [ref=e250]:
+              - cell "Fieldstone house, two floors, 0.8 acres" [ref=e251]:
+                - img "Fieldstone house, two floors, 0.8 acres" [ref=e252]
+              - cell "Fieldstone house, two floors, 0.8 acres Bedford Co., PA" [ref=e253]:
+                - generic [ref=e254]: Fieldstone house, two floors, 0.8 acres
+                - generic [ref=e255]: Bedford Co., PA
+              - cell "$49,000" [ref=e256]
+              - cell "Published" [ref=e257]
+              - cell "Edit Unpublish Delete" [ref=e258]:
+                - generic [ref=e259]:
+                  - link "Edit" [ref=e260] [cursor=pointer]:
+                    - /url: /admin/listings/14/edit
+                  - button "Unpublish" [ref=e262] [cursor=pointer]
+                  - button "Delete" [ref=e264] [cursor=pointer]
+            - row "Hunting cabin on 6 wooded acres Hunting cabin on 6 wooded acres NEK, VT · New $48,000 Published Edit Unpublish Delete" [ref=e265]:
+              - cell "Hunting cabin on 6 wooded acres" [ref=e266]:
+                - img "Hunting cabin on 6 wooded acres" [ref=e267]
+              - cell "Hunting cabin on 6 wooded acres NEK, VT · New" [ref=e268]:
+                - generic [ref=e269]: Hunting cabin on 6 wooded acres
+                - generic [ref=e270]: NEK, VT · New
+              - cell "$48,000" [ref=e271]
+              - cell "Published" [ref=e272]
+              - cell "Edit Unpublish Delete" [ref=e273]:
+                - generic [ref=e274]:
+                  - link "Edit" [ref=e275] [cursor=pointer]:
+                    - /url: /admin/listings/15/edit
+                  - button "Unpublish" [ref=e277] [cursor=pointer]
+                  - button "Delete" [ref=e279] [cursor=pointer]
+            - row "Ranch cabin on 8 acres, Hi-Line Ranch cabin on 8 acres, Hi-Line Phillips Co., MT · New $68,000 Published Edit Unpublish Delete" [ref=e280]:
+              - cell "Ranch cabin on 8 acres, Hi-Line" [ref=e281]:
+                - img "Ranch cabin on 8 acres, Hi-Line" [ref=e282]
+              - cell "Ranch cabin on 8 acres, Hi-Line Phillips Co., MT · New" [ref=e283]:
+                - generic [ref=e284]: Ranch cabin on 8 acres, Hi-Line
+                - generic [ref=e285]: Phillips Co., MT · New
+              - cell "$68,000" [ref=e286]
+              - cell "Published" [ref=e287]
+              - cell "Edit Unpublish Delete" [ref=e288]:
+                - generic [ref=e289]:
+                  - link "Edit" [ref=e290] [cursor=pointer]:
+                    - /url: /admin/listings/16/edit
+                  - button "Unpublish" [ref=e292] [cursor=pointer]
+                  - button "Delete" [ref=e294] [cursor=pointer]
+            - row "E2E test cottage, do not buy E2E test cottage, do not buy Chase Co., KS · New $12,500 Published Edit Unpublish Delete" [ref=e340]:
+              - cell "E2E test cottage, do not buy" [ref=e341]:
+                - img "E2E test cottage, do not buy" [ref=e342]
+              - cell "E2E test cottage, do not buy Chase Co., KS · New" [ref=e343]:
+                - generic [ref=e344]: E2E test cottage, do not buy
+                - generic [ref=e345]: Chase Co., KS · New
+              - cell "$12,500" [ref=e346]
+              - cell "Published" [ref=e347]
+              - cell "Edit Unpublish Delete" [ref=e348]:
+                - generic [ref=e349]:
+                  - link "Edit" [ref=e350] [cursor=pointer]:
+                    - /url: /admin/listings/17/edit
+                  - button "Unpublish" [ref=e352] [cursor=pointer]
+                  - button "Delete" [ref=e354] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e25] [cursor=pointer]:
+    - img [ref=e26]
+  - alert [ref=e29]: Admin — Cheap Houses
